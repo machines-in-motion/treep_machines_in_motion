@@ -1,0 +1,81 @@
+#
+#
+#
+
+# The dynamic graph LAAS packages (Stack of task github related)
+
+# pinocchio
+hpp-fcl:
+    path: src/not_catkin/third_party/laas
+    origin: https-hpp
+    compilation: dynamic_graph
+eigenpy:
+    path: src/not_catkin/third_party/laas
+    origin: https-sot
+    compilation: dynamic_graph
+pinocchio:
+    path: src/not_catkin/third_party/laas
+    origin: https-sot
+    compilation: dynamic_graph
+
+# dynamic-graph
+dynamic-graph:
+    path: src/not_catkin/third_party/laas
+    origin: https-sot
+    compilation: dynamic_graph
+dynamic-graph-python:
+    path: src/not_catkin/third_party/laas
+    origin: https-sot
+    compilation: dynamic_graph
+
+# gepetto-viewer
+gepetto-viewer:
+    path: src/not_catkin/third_party/laas
+    origin: https-gepetto
+    compilation: dynamic_graph
+gepetto-viewer-corba:
+    path: src/not_catkin/third_party/laas
+    origin: https-gepetto
+    compilation: dynamic_graph
+
+# Task space inverse dynamics
+simple_humanoid_description:
+    path: src/not_catkin/third_party/laas
+    origin: https-laas
+    compilation: dynamic_graph
+parametric-curves:
+    path: src/not_catkin/third_party/laas
+    origin: https-sot
+    compilation: dynamic_graph
+tsid:
+    path: src/not_catkin/third_party/laas
+    origin: https-sot
+    compilation: dynamic_graph
+
+# Stack of Task framework
+sot-core:
+    path: src/not_catkin/third_party/laas
+    origin: https-sot
+    compilation: dynamic_graph
+sot-dynamic-pinocchio:
+    path: src/not_catkin/third_party/laas
+    origin: https-sot
+    compilation: dynamic_graph
+sot-tools:
+    path: src/not_catkin/third_party/laas
+    origin: https-sot
+    compilation: dynamic_graph
+sot-torque-control:
+    path: src/not_catkin/third_party/laas
+    origin: https-sot
+    compilation: dynamic_graph
+
+
+# The dynamic graph MPI-IS/NYU packages
+
+rqt_dynamic_graph:
+    path: src/catkin/dg_control/
+    origin: https://github.com/MaximilienNaveau/rqt_dynamic_graph.git
+dynamic_graph_manager:
+    path: src/catkin/dg_control/
+    origin: github_mm

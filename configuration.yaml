@@ -1,0 +1,9 @@
+origin_prefixes:
+    github_mm: 'git@github.com:machines-in-motion/'
+    git-pybind: 'git@github.com:pybind/'
+    https-pybind: 'https://github.com/pybind/'
+    https-sot: 'https://github.com/stack-of-tasks/'
+    https-hpp: 'https://github.com/humanoid-path-planner/'
+    https-gepetto: 'https://github.com/gepetto/'
+    https-laas: 'https://github.com/laas/'
+

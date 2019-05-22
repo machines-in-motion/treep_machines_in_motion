@@ -1,0 +1,43 @@
+DYNAMIC_GRAPH_MANAGER:
+    parent_projects: [
+      'REAL_TIME_TOOLS',
+      'SHARED_MEMORY', 
+      'CONFIGURATION_FILE_PARSING', 
+      'DYNAMIC_GRAPH']
+    repos: ['rqt_dynamic_graph', 'dynamic_graph_manager']
+
+DYNAMIC_GRAPH:
+    repos: [
+      'dynamic-graph',
+      'dynamic-graph-python',]
+
+PINOCCHIO:
+    repos: [
+      'hpp-fcl',
+      'eigenpy',
+      'pinocchio',]
+
+GEPETTO_VIEWER:
+    repos: [
+      'gepetto-viewer',
+      'gepetto-viewer-corba',]
+
+TSID:
+    parent_projects: ['PINOCCHIO']
+    repos: [
+      'simple_humanoid_description',
+      'parametric-curves',
+      'tsid',]
+
+SOT:
+    parent_projects: ['TSID', 'DYNAMIC_GRAPH']
+    repos: [
+      'sot-core',
+      'sot-dynamic-pinocchio',
+      'sot-tools',
+      'sot-torque-control',]
+
+
+ALL_LAAS:
+    parent_projects: ['SOT', 'GEPETTO_VIEWER']
+    repos: []
