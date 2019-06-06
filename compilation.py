@@ -20,9 +20,12 @@ def dynamic_graph(workspace_path, package_name, package_path,
     devel = os.path.abspath(catkin_workspace_path + os.sep + "devel")
     cmake_suffix = ("-DCMAKE_INSTALL_PREFIX=" + devel +
                     " -DCMAKE_BUILD_TYPE=" + build_type)
-        
+
+
     s = ["# calling customized cmake for "+str(package_name)+"\n"]
 
+    s.append("mkdir -p "+devel)
+    
     s.append("cd "+package_path)
 
     build_folder = catkin_workspace_path + os.sep + "build"
