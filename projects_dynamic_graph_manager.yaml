@@ -1,0 +1,7 @@
+DYNAMIC_GRAPH_MANAGER:
+    parent_projects: [
+      'REAL_TIME_TOOLS',
+      'SHARED_MEMORY', 
+      'CONFIGURATION_FILE_PARSING', 
+      'DYNAMIC_GRAPH']
+    repos: ['rqt_dynamic_graph', 'dynamic_graph_manager']

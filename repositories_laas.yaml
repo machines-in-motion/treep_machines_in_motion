@@ -2,7 +2,7 @@
 #
 #
 
-# The dynamic graph LAAS packages (Stack of task github related)
+# The LAAS packages
 
 # pinocchio
 hpp-fcl:
@@ -70,12 +70,12 @@ sot-torque-control:
     origin: https-sot
     compilation: dynamic_graph
 
-
-# The dynamic graph MPI-IS/NYU packages
-
-rqt_dynamic_graph:
-    path: src/catkin/dg_control/
-    origin: https://github.com/MaximilienNaveau/rqt_dynamic_graph.git
-dynamic_graph_manager:
-    path: src/catkin/dg_control/
-    origin: github_mm
+# crocoddyl framework
+crocoddyl:
+    path: src/not_catkin/third_party/laas
+    origin: git-loco3d
+    compilation: dynamic_graph
+crocoddyl-cpp-draft:
+    path: src/not_catkin/third_party/laas
+    origin: git-loco3d
+    compilation: dynamic_graph

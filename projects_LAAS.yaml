@@ -1,11 +1,3 @@
-DYNAMIC_GRAPH_MANAGER:
-    parent_projects: [
-      'REAL_TIME_TOOLS',
-      'SHARED_MEMORY', 
-      'CONFIGURATION_FILE_PARSING', 
-      'DYNAMIC_GRAPH']
-    repos: ['rqt_dynamic_graph', 'dynamic_graph_manager']
-
 DYNAMIC_GRAPH:
     repos: [
       'dynamic-graph',
@@ -36,7 +28,6 @@ SOT:
       'sot-dynamic-pinocchio',
       'sot-tools',
       'sot-torque-control',]
-
 
 ALL_LAAS:
     parent_projects: ['SOT', 'GEPETTO_VIEWER']

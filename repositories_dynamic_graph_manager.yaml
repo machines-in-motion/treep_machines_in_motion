@@ -1,0 +1,11 @@
+#
+#
+#
+
+# The dynamic graph MPI-IS/NYU packages
+rqt_dynamic_graph:
+    path: src/catkin/dg_control/
+    origin: https://github.com/MaximilienNaveau/rqt_dynamic_graph.git
+dynamic_graph_manager:
+    path: src/catkin/dg_control/
+    origin: github_mm

@@ -28,7 +28,7 @@ def dynamic_graph(workspace_path, package_name, package_path,
     
     s.append("cd "+package_path)
 
-    build_folder = catkin_workspace_path + os.sep + "build"
+    build_folder = package_path + os.sep + "build"
     setup_bash = devel + os.sep + "dynamic_graph_setup.bash"
     devel_bin_folder = devel + os.sep + "bin"
     devel_lib_folder = devel + os.sep + "lib"
