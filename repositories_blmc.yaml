@@ -1,0 +1,18 @@
+blmc_robots:
+    path: src/catkin/robots/
+    origin: github_mm
+dg_blmc_robots:
+    path: src/catkin/robots/
+    origin: github_mm
+blmc_drivers:
+    path: src/catkin/hardware/
+    origin: github_mm
+robot_properties_teststand:
+    path: src/catkin/robots/robot_properties/
+    origin: github_mm
+robot_interfaces:
+    path: src/catkin/robots/
+    origin: github_mm
+robot_properties_solo:
+    path: src/catkin/robots/robot_properties/
+    origin: github_mm

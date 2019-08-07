@@ -1,0 +1,6 @@
+ati_ft_sensor:
+    path: src/catkin/hardware/
+    origin: github_mm
+blmc_drivers:
+    path: src/catkin/hardware/
+    origin: github_mm

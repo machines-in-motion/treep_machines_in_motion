@@ -1,0 +1,3 @@
+pinocchio_bullet:
+    path: src/catkin/robots/
+    origin: github_mm

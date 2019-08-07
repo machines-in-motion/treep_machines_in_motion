@@ -9,3 +9,9 @@ rqt_dynamic_graph:
 dynamic_graph_manager:
     path: src/catkin/dg_control/
     origin: github_mm
+dg_tools:
+    path: src/catkin/dg_control/
+    origin: github_mm
+dg_blmc_robots:
+    path: src/catkin/robots/
+    origin: github_mm

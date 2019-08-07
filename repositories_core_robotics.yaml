@@ -17,6 +17,9 @@ pybind11:
 pybind11_catkin:
     path: src/catkin/core_robotics
     origin: github_mm
+mpi_cpp_tools:
+    path: src/catkin/tools/
+    origin: github_mm
 ci_example:
     path: src/catkin/examples
     origin: github_mm
