@@ -15,3 +15,6 @@ dg_tools:
 dg_blmc_robots:
     path: src/catkin/robots/
     origin: github_mm
+dg_tutorial_with_turtlesim:
+    path: src/catkin/examples
+    origin: github_mm

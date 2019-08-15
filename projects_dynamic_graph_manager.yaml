@@ -5,3 +5,6 @@ DYNAMIC_GRAPH_MANAGER:
       'CONFIGURATION_FILE_PARSING', 
       'DYNAMIC_GRAPH']
     repos: ['rqt_dynamic_graph', 'dynamic_graph_manager']
+DG_TUTORIAL:
+    parent_projects: ['DYNAMIC_GRAPH_MANAGER']
+    repos: ['dg_tutorial_with_turtlesim']
