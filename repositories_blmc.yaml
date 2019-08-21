@@ -10,3 +10,15 @@ robot_interfaces:
 robot_properties_solo:
     path: src/catkin/robots/robot_properties/
     origin: github_odri
+mw_gui_universal:
+    path: /hardware/blmc/
+    origin: github_odri
+user_config_f28069m_drv8305:
+    path: /hardware/blmc/
+    origin: github_odri
+amd_motorware_ext:
+    path: /hardware/blmc/
+    origin: github_odri
+mw_dual_motor_torque_ctrl:
+    path: /hardware/blmc/
+    origin: github_odri
