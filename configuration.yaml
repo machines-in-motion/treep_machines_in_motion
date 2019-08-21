@@ -1,5 +1,6 @@
 origin_prefixes:
     github_mm: 'git@github.com:machines-in-motion/'
+    github_odri: 'git@github.com:open-dynamic-robot-initiative/'
     git-pybind: 'git@github.com:pybind/'
     git-loco3d: 'git@gepgitlab.laas.fr:loco-3d/'
     https-pybind: 'https://github.com/pybind/'

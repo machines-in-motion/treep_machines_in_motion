@@ -1,12 +1,12 @@
 blmc_robots:
     path: src/catkin/robots/
-    origin: github_mm
+    origin: github_odri
 robot_properties_teststand:
     path: src/catkin/robots/robot_properties/
-    origin: github_mm
+    origin: github_odri
 robot_interfaces:
     path: src/catkin/robots/
-    origin: github_mm
+    origin: github_odri
 robot_properties_solo:
     path: src/catkin/robots/robot_properties/
-    origin: github_mm
+    origin: github_odri
