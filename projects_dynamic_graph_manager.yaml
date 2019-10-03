@@ -4,7 +4,7 @@ DYNAMIC_GRAPH_MANAGER:
       'SHARED_MEMORY', 
       'CONFIGURATION_FILE_PARSING', 
       'DYNAMIC_GRAPH']
-    repos: ['rqt_dynamic_graph', 'dynamic_graph_manager']
-DG_TUTORIAL:
-    parent_projects: ['DYNAMIC_GRAPH_MANAGER']
-    repos: ['dg_tutorial_with_turtlesim']
+    repos: [
+      'rqt_dynamic_graph',
+      'dynamic_graph_manager',
+      'dg_tutorial_with_turtlesim']
