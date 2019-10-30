@@ -1,7 +1,19 @@
+# robot hardware
 BLMC_HARDWARE:
     repos: ['mw_gui_universal','user_config_f28069m_drv8305',
-            'amd_motorware_ext','mw_dual_motor_torque_ctrl']
+            'amd_motorware_ext','mw_dual_motor_torque_ctrl', 'master-board']
 
-ROBOT_PROPERTIES_SOLO:
+# robot models
+ROBOT_PROPERTY_BASE:
     parent_projects: ['COMPILATION']
+    repos: ['robot_property_base', 'gepetto_gui_helper']
+ROBOT_PROPERTIES_TESTSTAND:
+    parent_projects: ['ROBOT_PROPERTY_BASE']
+    repos: ['robot_properties_teststand']
+ROBOT_PROPERTIES_SOLO:
+    parent_projects: ['ROBOT_PROPERTY_BASE']
     repos: ['robot_properties_solo']
+# ALL robot models
+ROBOT_PROPERTIES_ALL:
+    parent_projects: ['ROBOT_PROPERTIES_TESTSTAND', 'ROBOT_PROPERTIES_SOLO']
+    repos: []

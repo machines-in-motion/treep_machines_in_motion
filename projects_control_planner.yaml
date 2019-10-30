@@ -1,0 +1,6 @@
+KINO_DYN_PLANNER:
+    parent_projects: ['COMPILATION', 'ROBOT_PROPERTIES_ALL']
+    repos: ['kino-dynamic-opt',
+            'yaml_cpp_catkin',
+            'pybind11',
+            'pybind11_catkin']
