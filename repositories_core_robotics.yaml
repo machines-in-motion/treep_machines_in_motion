@@ -19,7 +19,7 @@ pybind11_catkin:
     origin: github_mm
 mpi_cpp_tools:
     path: src/catkin/tools/
-    origin: github_mm
+    origin: github_odri
 ci_example:
     path: src/catkin/examples
     origin: github_mm
