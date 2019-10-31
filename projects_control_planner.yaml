@@ -3,4 +3,5 @@ KINO_DYN_PLANNER:
     repos: ['kino_dynamic_opt',
             'yaml_cpp_catkin',
             'pybind11',
-            'pybind11_catkin']
+            'pybind11_catkin',
+            'pinocchio_bullet']
