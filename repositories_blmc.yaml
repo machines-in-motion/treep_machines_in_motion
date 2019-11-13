@@ -19,14 +19,14 @@ robot_interfaces:
 
 # The robot onboard drivers
 mw_gui_universal:
-    path: /hardware/blmc/
+    path: src/not_catkin/hardware/blmc/
     origin: github_odri
 user_config_f28069m_drv8305:
-    path: /hardware/blmc/
+    path: src/not_catkin/hardware/blmc/
     origin: github_odri
 amd_motorware_ext:
-    path: /hardware/blmc/
+    path: src/not_catkin/hardware/blmc/
     origin: github_odri
 mw_dual_motor_torque_ctrl:
-    path: /hardware/blmc/
+    path: src/not_catkin/hardware/blmc/
     origin: github_odri
