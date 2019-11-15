@@ -1,8 +1,6 @@
 # robot hardware
 BLMC_HARDWARE:
-    repos: ['mw_gui_universal','user_config_f28069m_drv8305',
-            'amd_motorware_ext','mw_dual_motor_torque_ctrl', 'master-board',
-            'motorware']
+    repos: ['master-board','uDriver_firmware']
 
 # robot models
 ROBOT_PROPERTY_BASE:
