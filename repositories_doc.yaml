@@ -1,9 +1,0 @@
-machines-in-motion.github.io:
-    path: src/doc/
-    origin: github_mm
-open-dynamic-robot-initiative.github.io:
-    path: src/doc/
-    origin: github_odri
-open-dynamic-robot-initiative.github.io.wiki:
-    path: src/doc/
-    origin: github_odri
