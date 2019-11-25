@@ -1,0 +1,116 @@
+# -----------------------------------------------------------------------------
+# BLMC
+
+# robot models
+robot_property_base:
+    path: src/catkin/robots/robot_properties/
+    origin: github_odri
+robot_properties_teststand:
+    path: src/catkin/robots/robot_properties/
+    origin: github_odri
+robot_properties_solo:
+    path: src/catkin/robots/robot_properties/
+    origin: github_odri
+
+# The robot low level control
+blmc_robots:
+    path: src/catkin/robots/
+    origin: github_odri
+robot_interfaces:
+    path: src/catkin/robots/
+    origin: github_odri
+
+
+# -----------------------------------------------------------------------------
+# Core Robotics
+
+shared_memory:
+    path: src/catkin/core_robotics
+    origin: github_mm
+real_time_tools:
+    path: src/catkin/core_robotics
+    origin: github_mm
+mpi_cmake_modules:
+    path: src/catkin/core_robotics
+    origin: github_mm
+yaml_cpp_catkin:
+    path: src/catkin/core_robotics
+    origin: github_mm
+    branch: master
+pybind11:
+    path: src/not_catkin/third_party
+    origin: https-pybind
+pybind11_catkin:
+    path: src/catkin/core_robotics
+    origin: github_mm
+mpi_cpp_tools:
+    path: src/catkin/tools/
+    origin: github_odri
+ci_example:
+    path: src/catkin/examples
+    origin: github_mm
+
+
+# -----------------------------------------------------------------------------
+# Doc
+
+machines-in-motion.github.io:
+    path: src/doc/
+    origin: github_mm
+open-dynamic-robot-initiative.github.io:
+    path: src/doc/
+    origin: github_odri
+open-dynamic-robot-initiative.github.io.wiki:
+    path: src/doc/
+    origin: github_odri
+
+
+# -----------------------------------------------------------------------------
+# Dynamic Graph
+
+# The dynamic graph MPI-IS/NYU packages
+rqt_dynamic_graph:
+    path: src/catkin/dg_control/
+    origin: https://github.com/MaximilienNaveau/rqt_dynamic_graph.git
+dynamic_graph_manager:
+    path: src/catkin/dg_control/
+    origin: github_mm
+dg_tools:
+    path: src/catkin/dg_control/
+    origin: github_mm
+dg_blmc_robots:
+    path: src/catkin/robots/
+    origin: github_mm
+dg_tutorial_with_turtlesim:
+    path: src/catkin/examples
+    origin: github_mm
+
+
+# -----------------------------------------------------------------------------
+# Robot Control Planner
+
+kino_dynamic_opt:
+    path: src/catkin/control/
+    origin: github_mm
+
+
+# -----------------------------------------------------------------------------
+# Robot Drivers
+
+ati_ft_sensor:
+    path: src/catkin/hardware/
+    origin: github_odri
+blmc_drivers:
+    path: src/catkin/hardware/
+    origin: github_odri
+master-board:
+    path: src/catkin/hardware
+    origin: github_odri
+
+
+# -----------------------------------------------------------------------------
+# Robot Simulation
+
+pinocchio_bullet:
+    path: src/catkin/robots/
+    origin: github_mm
