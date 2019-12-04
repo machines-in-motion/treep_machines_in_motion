@@ -5,6 +5,10 @@
 BLMC_HARDWARE:
     repos: ['master-board','udriver_firmware']
 
+BLMC_BASIC:
+    parent_projects: []
+    repos: ['motorware', 'amd_motorware_ext', 'user_config_f28069m_drv8305', 'mw_dual_motor_torque_ctrl']
+
 # robot models
 ROBOT_PROPERTY_BASE:
     parent_projects: ['COMPILATION']
