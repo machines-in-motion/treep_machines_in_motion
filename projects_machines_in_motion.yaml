@@ -3,7 +3,7 @@
 
 # robot hardware
 BLMC_HARDWARE:
-    repos: ['master-board','uDriver_firmware']
+    repos: ['master-board','udriver_firmware']
 
 # robot models
 ROBOT_PROPERTY_BASE:
