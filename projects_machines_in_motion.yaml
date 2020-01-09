@@ -1,13 +1,18 @@
 # -----------------------------------------------------------------------------
 # BLMC
 
-# robot hardware
-BLMC_HARDWARE:
+# robot Firmware
+BLMC_FIRMWARE:
     repos: ['master-board','udriver_firmware']
 
 BLMC_BASIC:
     parent_projects: []
     repos: ['motorware', 'amd_motorware_ext', 'user_config_f28069m_drv8305', 'mw_dual_motor_torque_ctrl']
+
+# robot drivers
+BLMC_DRIVERS:
+    parent_projects: ['COMPILATION']
+    repos: [real_time_tools, 'master-board', 'blmc_drivers']
 
 # robot models
 ROBOT_PROPERTY_BASE:
