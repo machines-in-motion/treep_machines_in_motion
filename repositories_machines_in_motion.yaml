@@ -20,7 +20,6 @@ robot_interfaces:
     path: src/catkin/robots/
     origin: github_odri
 
-
 # -----------------------------------------------------------------------------
 # Core Robotics
 
@@ -106,7 +105,15 @@ blmc_drivers:
 master-board:
     path: src/catkin/hardware
     origin: github_odri
-
+mw_dual_motor_torque_ctrl:
+    path: src/not_catkin/hardware/blmc/
+    origin: github_odri
+user_config_f28069m_drv8305:
+    path: src/not_catkin/hardware/blmc/
+    origin: github_odri
+amd_motorware_ext:
+    path: src/not_catkin/hardware/blmc/
+    origin: github_odri
 
 # -----------------------------------------------------------------------------
 # Robot Simulation
