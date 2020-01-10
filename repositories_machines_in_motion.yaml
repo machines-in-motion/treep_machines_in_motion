@@ -48,6 +48,9 @@ mpi_cpp_tools:
 ci_example:
     path: src/catkin/examples
     origin: github_mm
+time_series:
+    path: src/catkin/core_robotics
+    origin: github_mm
 
 
 # -----------------------------------------------------------------------------
