@@ -48,7 +48,9 @@ mpi_cpp_tools:
 ci_example:
     path: src/catkin/examples
     origin: github_mm
-
+synchronizer:
+    path: src/catkin/exchange
+    origin: github_mm
 
 # -----------------------------------------------------------------------------
 # Doc
