@@ -12,12 +12,12 @@ BLMC_BASIC:
 # robot drivers
 BLMC_DRIVERS:
     parent_projects: ['COMPILATION']
-    repos: [real_time_tools, 'master-board', 'blmc_drivers']
+    repos: ['real_time_tools', 'master-board', 'blmc_drivers']
 
 # robot models
 ROBOT_PROPERTY_BASE:
     parent_projects: ['COMPILATION']
-    repos: ['robot_property_base', 'gepetto_gui_helper']
+    repos: ['robot_property_base']
 ROBOT_PROPERTIES_TESTSTAND:
     parent_projects: ['ROBOT_PROPERTY_BASE']
     repos: ['robot_properties_teststand']
@@ -86,8 +86,7 @@ DYNAMIC_GRAPH_MANAGER:
     parent_projects: [
       'REAL_TIME_TOOLS',
       'SHARED_MEMORY',
-      'CONFIGURATION_FILE_PARSING',
-      'DYNAMIC_GRAPH']
+      'CONFIGURATION_FILE_PARSING']
     repos: [
       'rqt_dynamic_graph',
       'dynamic_graph_manager',

@@ -51,7 +51,9 @@ ci_example:
 time_series:
     path: src/catkin/core_robotics
     origin: github_mm
-
+synchronizer:
+    path: src/catkin/core_robotics
+    origin: github_mm
 
 # -----------------------------------------------------------------------------
 # Doc
