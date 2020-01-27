@@ -53,6 +53,9 @@ SHARED_MEMORY:
 REAL_TIME_TOOLS:
     parent_projects: ['COMPILATION']
     repos: ['real_time_tools']
+TIME_SERIES:
+    parent_projects: ['COMPILATION']
+    repos: ['time_series']
 CONFIGURATION_FILE_PARSING:
     parent_projects: ['COMPILATION']
     repos: ['yaml_cpp_catkin']
@@ -65,7 +68,7 @@ CI_EXAMPLE:
 
 # Contains ALL repository.
 CORE_ROBOTICS:
-    parent_projects: ['SHARED_MEMORY', 'REAL_TIME_TOOLS', 'CI_EXAMPLE']
+    parent_projects: ['SHARED_MEMORY', 'REAL_TIME_TOOLS', 'CI_EXAMPLE', 'TIME_SERIES']
     repos: []
 
 
