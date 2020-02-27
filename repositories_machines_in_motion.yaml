@@ -20,6 +20,11 @@ robot_interfaces:
     path: src/catkin/robots/
     origin: github_odri
 
+# Robot-specific repos
+robot_fingers:
+    path: src/catkin/robots
+    origin: github_odri
+
 # -----------------------------------------------------------------------------
 # Core Robotics
 
