@@ -11,6 +11,9 @@ robot_properties_teststand:
 robot_properties_solo:
     path: src/catkin/robots/robot_properties/
     origin: github_odri
+robot_properties_bolt:
+    path: src/catkin/robots/robot_properties/
+    origin: github_odri
 
 # The robot low level control
 blmc_robots:
