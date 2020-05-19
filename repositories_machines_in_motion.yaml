@@ -124,6 +124,9 @@ user_config_f28069m_drv8305:
 amd_motorware_ext:
     path: src/not_catkin/hardware/blmc/
     origin: github_odri
+mw_gui_universal:
+    path: src/not_catkin/hardware/blmc/
+    origin: github_odri
 
 # -----------------------------------------------------------------------------
 # Robot Simulation
