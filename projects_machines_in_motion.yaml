@@ -9,6 +9,10 @@ BLMC_BASIC:
     parent_projects: []
     repos: ['motorware', 'amd_motorware_ext', 'user_config_f28069m_drv8305', 'mw_dual_motor_torque_ctrl']
 
+BLMC_DEBUG_GUI:
+    parent_projects: ['BLMC_BASIC']
+    repos: ['mw_gui_universal']
+
 # robot drivers
 BLMC_DRIVERS:
     parent_projects: ['COMPILATION']
