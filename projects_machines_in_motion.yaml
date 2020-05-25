@@ -62,7 +62,7 @@ REAL_TIME_TOOLS:
     repos: ['real_time_tools']
 TIME_SERIES:
     parent_projects: ['COMPILATION']
-    repos: ['time_series']
+    repos: ['time_series', 'signal_handler']
 CONFIGURATION_FILE_PARSING:
     parent_projects: ['COMPILATION']
     repos: ['yaml_cpp_catkin']

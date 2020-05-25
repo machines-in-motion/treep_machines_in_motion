@@ -62,6 +62,9 @@ time_series:
 synchronizer:
     path: src/catkin/core_robotics
     origin: github_mm
+signal_handler:
+    path: src/catkin/tools
+    origin: github_mm
 
 # -----------------------------------------------------------------------------
 # Doc
