@@ -66,6 +66,9 @@ synchronizer:
 machines-in-motion.github.io:
     path: src/doc/
     origin: github_mm
+machines-in-motion.github.io.wiki:
+    path: src/doc/
+    origin: github_mm
 open-dynamic-robot-initiative.github.io:
     path: src/doc/
     origin: github_odri
@@ -96,9 +99,12 @@ dg_tutorial_with_turtlesim:
 
 
 # -----------------------------------------------------------------------------
-# Robot Control Planner
+# Robot Control, Planner, Estimation
 
 kino_dynamic_opt:
+    path: src/catkin/control/
+    origin: github_mm
+robot_estimation:
     path: src/catkin/control/
     origin: github_mm
 

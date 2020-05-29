@@ -4,6 +4,11 @@
 
 # The LAAS packages
 
+# Build
+jrl-cmakemodules:
+  path: src/not_catkin/third_party/laas
+  origin: https-jrl-umi3218
+
 # pinocchio
 hpp-fcl:
     path: src/not_catkin/third_party/laas
