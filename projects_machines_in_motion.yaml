@@ -9,6 +9,10 @@ BLMC_BASIC:
     parent_projects: []
     repos: ['motorware', 'amd_motorware_ext', 'user_config_f28069m_drv8305', 'mw_dual_motor_torque_ctrl']
 
+BLMC_DEBUG_GUI:
+    parent_projects: ['BLMC_BASIC']
+    repos: ['mw_gui_universal']
+
 # robot drivers
 BLMC_DRIVERS:
     parent_projects: ['COMPILATION']
@@ -24,9 +28,12 @@ ROBOT_PROPERTIES_TESTSTAND:
 ROBOT_PROPERTIES_SOLO:
     parent_projects: ['ROBOT_PROPERTY_BASE']
     repos: ['robot_properties_solo']
+ROBOT_PROPERTIES_Bolt:
+    parent_projects: ['ROBOT_PROPERTY_BASE']
+    repos: ['robot_properties_bolt']
 # ALL robot models
 ROBOT_PROPERTIES_ALL:
-    parent_projects: ['ROBOT_PROPERTIES_TESTSTAND', 'ROBOT_PROPERTIES_SOLO']
+    parent_projects: ['ROBOT_PROPERTIES_TESTSTAND', 'ROBOT_PROPERTIES_SOLO', 'ROBOT_PROPERTIES_Bolt']
     repos: []
 
 
@@ -55,7 +62,7 @@ REAL_TIME_TOOLS:
     repos: ['real_time_tools']
 TIME_SERIES:
     parent_projects: ['COMPILATION']
-    repos: ['time_series']
+    repos: ['time_series', 'signal_handler']
 CONFIGURATION_FILE_PARSING:
     parent_projects: ['COMPILATION']
     repos: ['yaml_cpp_catkin']

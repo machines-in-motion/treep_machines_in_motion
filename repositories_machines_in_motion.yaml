@@ -11,6 +11,9 @@ robot_properties_teststand:
 robot_properties_solo:
     path: src/catkin/robots/robot_properties/
     origin: github_odri
+robot_properties_bolt:
+    path: src/catkin/robots/robot_properties/
+    origin: github_odri
 
 # The robot low level control
 blmc_robots:
@@ -59,6 +62,9 @@ time_series:
 synchronizer:
     path: src/catkin/core_robotics
     origin: github_mm
+signal_handler:
+    path: src/catkin/tools
+    origin: github_mpiis
 
 # -----------------------------------------------------------------------------
 # Doc
@@ -128,6 +134,9 @@ user_config_f28069m_drv8305:
     path: src/not_catkin/hardware/blmc/
     origin: github_odri
 amd_motorware_ext:
+    path: src/not_catkin/hardware/blmc/
+    origin: github_odri
+mw_gui_universal:
     path: src/not_catkin/hardware/blmc/
     origin: github_odri
 
