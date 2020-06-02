@@ -65,6 +65,9 @@ synchronizer:
 signal_handler:
     path: src/catkin/tools
     origin: github_mpiis
+serialization_utils:
+    path: src/catkin/tools
+    origin: github_mpiis
 
 # -----------------------------------------------------------------------------
 # Doc
