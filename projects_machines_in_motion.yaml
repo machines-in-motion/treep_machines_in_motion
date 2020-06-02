@@ -56,7 +56,7 @@ COMPILATION:
     repos: ['mpi_cmake_modules']
 SHARED_MEMORY:
     parent_projects: ['COMPILATION', 'PYTHON_BINDING']
-    repos: ['shared_memory']
+    repos: ['shared_memory', 'serialization_utils']
 REAL_TIME_TOOLS:
     parent_projects: ['COMPILATION']
     repos: ['real_time_tools']
