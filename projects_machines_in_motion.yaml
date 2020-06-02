@@ -33,7 +33,7 @@ ROBOT_PROPERTIES_BOLT:
     repos: ['robot_properties_bolt']
 # ALL robot models
 ROBOT_PROPERTIES_ALL:
-    parent_projects: ['ROBOT_PROPERTIES_TESTSTAND', 'ROBOT_PROPERTIES_SOLO', 'ROBOT_PROPERTIES_Bolt']
+    parent_projects: ['ROBOT_PROPERTIES_TESTSTAND', 'ROBOT_PROPERTIES_SOLO', 'ROBOT_PROPERTIES_BOLT']
     repos: []
 
 
