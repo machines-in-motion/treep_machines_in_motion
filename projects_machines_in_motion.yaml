@@ -28,7 +28,7 @@ ROBOT_PROPERTIES_TESTSTAND:
 ROBOT_PROPERTIES_SOLO:
     parent_projects: ['ROBOT_PROPERTY_BASE']
     repos: ['robot_properties_solo']
-ROBOT_PROPERTIES_Bolt:
+ROBOT_PROPERTIES_BOLT:
     parent_projects: ['ROBOT_PROPERTY_BASE']
     repos: ['robot_properties_bolt']
 # ALL robot models
@@ -101,3 +101,13 @@ DYNAMIC_GRAPH_MANAGER:
       'rqt_dynamic_graph',
       'dynamic_graph_manager',
       'dg_tutorial_with_turtlesim']
+
+# -----------------------------------------------------------------------------
+# Robots
+
+BOLT:
+    parent_projects: ['BLMC_ROBOTS']
+    repos: [
+      'bolt',
+      'dg_bolt',
+      'robot_properties_bolt']

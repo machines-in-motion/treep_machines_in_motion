@@ -19,6 +19,9 @@ robot_properties_bolt:
 blmc_robots:
     path: src/catkin/robots/
     origin: github_odri
+bolt:
+    path: src/catkin/robots/
+    origin: github_odri
 robot_interfaces:
     path: src/catkin/robots/
     origin: github_odri
@@ -98,6 +101,9 @@ dg_tools:
     origin: github_mm
 dg_blmc_robots:
     path: src/catkin/robots/
+    origin: github_mm
+dg_bolt:
+    path: src/catkin/dg_robots/
     origin: github_mm
 dg_tutorial_with_turtlesim:
     path: src/catkin/examples
