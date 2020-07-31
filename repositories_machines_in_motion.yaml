@@ -50,6 +50,7 @@ yaml_cpp_catkin:
 pybind11:
     path: src/not_catkin/third_party
     origin: https-pybind
+    branch: stable
 pybind11_catkin:
     path: src/catkin/core_robotics
     origin: github_mm
