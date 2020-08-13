@@ -111,3 +111,11 @@ BOLT:
       'bolt',
       'dg_bolt',
       'robot_properties_bolt']
+
+
+# -----------------------------------------------------------------------------
+# Robot Interfaces
+
+ROBOT_INTERFACES:
+    parent_projects: ['CORE_ROBOTICS']
+    repos: ['robot_interfaces', 'time_series', 'signal_handler']
