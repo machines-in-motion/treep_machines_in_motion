@@ -19,9 +19,6 @@ robot_properties_bolt:
 blmc_robots:
     path: src/catkin/robots/
     origin: github_odri
-bolt:
-    path: src/catkin/robots/
-    origin: github_odri
 robot_interfaces:
     path: src/catkin/robots/
     origin: github_odri
@@ -29,6 +26,12 @@ robot_interfaces:
 # Robot-specific repos
 robot_fingers:
     path: src/catkin/robots
+    origin: github_odri
+bolt:
+    path: src/catkin/robots/
+    origin: github_odri
+nyu_finger:
+    path: src/catkin/robots/
     origin: github_odri
 
 # -----------------------------------------------------------------------------

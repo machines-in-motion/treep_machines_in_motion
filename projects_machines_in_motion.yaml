@@ -111,3 +111,7 @@ BOLT:
       'bolt',
       'dg_bolt',
       'robot_properties_bolt']
+
+NYU_FINGER:
+    parent_projects: ['BLMC_ROBOTS']
+    repos: ['nyu_finger']
