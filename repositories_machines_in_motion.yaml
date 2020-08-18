@@ -14,6 +14,9 @@ robot_properties_solo:
 robot_properties_bolt:
     path: src/catkin/robots/robot_properties/
     origin: github_odri
+robot_properties_fingers:
+    path: src/catkin/robots/robot_properties/
+    origin: github_odri
 
 # The robot low level control
 blmc_robots:
@@ -53,6 +56,7 @@ yaml_cpp_catkin:
 pybind11:
     path: src/not_catkin/third_party
     origin: https-pybind
+    branch: stable
 pybind11_catkin:
     path: src/catkin/core_robotics
     origin: github_mm
@@ -158,3 +162,6 @@ mw_gui_universal:
 pinocchio_bullet:
     path: src/catkin/robots/
     origin: github_mm
+trifinger_simulation:
+    path: src/catkin/simulators/
+    origin: github_odri

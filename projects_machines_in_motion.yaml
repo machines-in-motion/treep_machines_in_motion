@@ -113,5 +113,28 @@ BOLT:
       'robot_properties_bolt']
 
 NYU_FINGER:
-    parent_projects: ['BLMC_ROBOTS']
-    repos: ['nyu_finger']
+    parent_projects: ['BLMC_DRIVERS', 'ROBOT_PROPERTIES_ALL','ROBOT_INTERFACES']
+    repos: [
+        'nyu_finger',
+        'ati_ft_sensor',
+        'blmc_robots',
+        'pybind11',
+        'pybind11_catkin'
+    ]
+
+# -----------------------------------------------------------------------------
+# Robot Interfaces
+
+ROBOT_INTERFACES:
+    parent_projects: ['CORE_ROBOTICS']
+    repos: ['robot_interfaces', 'time_series', 'signal_handler']
+
+ROBOT_FINGERS:
+    parent_projects: ['BLMC_DRIVERS', 'ROBOT_PROPERTIES_ALL', 'ROBOT_INTERFACES']
+    repos: [
+        'ati_ft_sensor',
+        'blmc_robots',
+        'robot_fingers',
+        'robot_properties_fingers',
+        'trifinger_simulation',
+        ]
