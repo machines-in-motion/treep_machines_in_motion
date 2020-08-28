@@ -33,6 +33,9 @@ robot_interfaces:
 robot_fingers:
     path: src/catkin/robots
     origin: github_odri
+trifinger_cameras:
+    path: src/catkin/robots
+    origin: github_odri
 
 # -----------------------------------------------------------------------------
 # Core Robotics
