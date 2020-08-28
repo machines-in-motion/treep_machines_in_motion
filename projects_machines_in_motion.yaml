@@ -135,6 +135,7 @@ ROBOT_FINGERS:
         'ati_ft_sensor',
         'blmc_robots',
         'robot_fingers',
+        'trifinger_cameras',
         'robot_properties_fingers',
         'trifinger_simulation',
         ]
