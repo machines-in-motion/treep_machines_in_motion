@@ -3,99 +3,99 @@
 
 # robot models
 robot_property_base:
-    path: src/catkin/robots/robot_properties/
+    path: src/
     origin: github_odri
 robot_properties_teststand:
-    path: src/catkin/robots/robot_properties/
+    path: src/
     origin: github_odri
 robot_properties_solo:
-    path: src/catkin/robots/robot_properties/
+    path: src/
     origin: github_odri
 robot_properties_bolt:
-    path: src/catkin/robots/robot_properties/
+    path: src/
     origin: github_odri
 robot_properties_fingers:
-    path: src/catkin/robots/robot_properties/
+    path: src/
     origin: github_odri
 
 # The robot low level control
 blmc_robots:
-    path: src/catkin/robots/
+    path: src/
     origin: github_odri
 robot_interfaces:
-    path: src/catkin/robots/
+    path: src/
     origin: github_odri
 
 # Robot-specific repos
 robot_fingers:
-    path: src/catkin/robots
+    path: src/
     origin: github_odri
 trifinger_cameras:
-    path: src/catkin/robots
+    path: src/
     origin: github_odri
 bolt:
-    path: src/catkin/robots/
+    path: src/
     origin: github_odri
 nyu_finger:
-    path: src/catkin/robots/
+    path: src/
     origin: github_odri
 
 # -----------------------------------------------------------------------------
 # Core Robotics
 
 shared_memory:
-    path: src/catkin/core_robotics
+    path: src/
     origin: github_mm
 real_time_tools:
-    path: src/catkin/core_robotics
+    path: src/
     origin: github_mm
 mpi_cmake_modules:
-    path: src/catkin/core_robotics
+    path: src/
     origin: github_mm
 yaml_cpp_catkin:
-    path: src/catkin/core_robotics
+    path: src/
     origin: github_mm
     branch: master
 pybind11:
-    path: src/not_catkin/third_party
+    path: src/
     origin: https-pybind
     branch: stable
 pybind11_catkin:
-    path: src/catkin/core_robotics
+    path: src/
     origin: github_mm
 mpi_cpp_tools:
-    path: src/catkin/tools/
+    path: src/
     origin: github_odri
 ci_example:
-    path: src/catkin/examples
+    path: src/
     origin: github_mm
 time_series:
-    path: src/catkin/core_robotics
+    path: src/
     origin: github_mm
 synchronizer:
-    path: src/catkin/core_robotics
+    path: src/
     origin: github_mm
 signal_handler:
-    path: src/catkin/tools
+    path: src/
     origin: github_mpiis
 serialization_utils:
-    path: src/catkin/tools
+    path: src/
     origin: github_mpiis
 
 # -----------------------------------------------------------------------------
 # Doc
 
 machines-in-motion.github.io:
-    path: src/doc/
+    path: src/
     origin: github_mm
 machines-in-motion.github.io.wiki:
-    path: src/doc/
+    path: src/
     origin: github_mm
 open-dynamic-robot-initiative.github.io:
-    path: src/doc/
+    path: src/
     origin: github_odri
 open-dynamic-robot-initiative.github.io.wiki:
-    path: src/doc/
+    path: src/
     origin: github_odri
 
 
@@ -104,22 +104,22 @@ open-dynamic-robot-initiative.github.io.wiki:
 
 # The dynamic graph MPI-IS/NYU packages
 rqt_dynamic_graph:
-    path: src/catkin/dg_control/
+    path: src/
     origin: https://github.com/MaximilienNaveau/rqt_dynamic_graph.git
 dynamic_graph_manager:
-    path: src/catkin/dg_control/
+    path: src/
     origin: github_mm
 dg_tools:
-    path: src/catkin/dg_control/
+    path: src/
     origin: github_mm
 dg_blmc_robots:
-    path: src/catkin/robots/
+    path: src/
     origin: github_mm
 dg_bolt:
-    path: src/catkin/dg_robots/
+    path: src/
     origin: github_mm
 dg_tutorial_with_turtlesim:
-    path: src/catkin/examples
+    path: src/
     origin: github_mm
 
 
@@ -127,44 +127,51 @@ dg_tutorial_with_turtlesim:
 # Robot Control, Planner, Estimation
 
 kino_dynamic_opt:
-    path: src/catkin/control/
+    path: src/
     origin: github_mm
 robot_estimation:
-    path: src/catkin/control/
+    path: src/
     origin: github_mm
 
 
 # -----------------------------------------------------------------------------
-# Robot Drivers
+# Robot Drivers and Firmware
 
 ati_ft_sensor:
-    path: src/catkin/hardware/
+    path: src/
     origin: github_odri
 blmc_drivers:
-    path: src/catkin/hardware/
+    path: src/
     origin: github_odri
 master-board:
-    path: src/catkin/hardware
+    path: src/
     origin: github_odri
 mw_dual_motor_torque_ctrl:
-    path: src/not_catkin/hardware/blmc/
+    path: src/
     origin: github_odri
 user_config_f28069m_drv8305:
-    path: src/not_catkin/hardware/blmc/
+    path: src/
     origin: github_odri
 amd_motorware_ext:
-    path: src/not_catkin/hardware/blmc/
+    path: src/
     origin: github_odri
 mw_gui_universal:
-    path: src/not_catkin/hardware/blmc/
+    path: src/
     origin: github_odri
 
 # -----------------------------------------------------------------------------
 # Robot Simulation
 
 pinocchio_bullet:
-    path: src/catkin/robots/
+    path: src/
     origin: github_mm
 trifinger_simulation:
-    path: src/catkin/simulators/
+    path: src/
     origin: github_odri
+
+# -----------------------------------------------------------------------------
+# Compilation
+
+catkin:
+    path: src/
+    origin: git@github.com:ros/catkin.git
