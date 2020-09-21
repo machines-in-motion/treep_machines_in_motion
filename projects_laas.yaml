@@ -5,6 +5,7 @@ DYNAMIC_GRAPH:
 
 PINOCCHIO:
     repos: [
+      'example-robot-data',
       'hpp-fcl',
       'eigenpy',
       'pinocchio',]
@@ -17,6 +18,7 @@ GEPETTO_VIEWER:
 TSID:
     parent_projects: ['PINOCCHIO']
     repos: [
+      'eiquadprog',
       'simple_humanoid_description',
       'parametric-curves',
       'tsid',]
@@ -26,8 +28,7 @@ SOT:
     repos: [
       'sot-core',
       'sot-dynamic-pinocchio',
-      'sot-tools',
-      'sot-torque-control',]
+      'sot-tools']
 
 ALL_LAAS:
     parent_projects: ['SOT', 'GEPETTO_VIEWER']

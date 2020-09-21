@@ -10,6 +10,9 @@ jrl-cmakemodules:
   origin: https-jrl-umi3218
 
 # pinocchio
+example-robot-data:
+    path: src/
+    origin: https-gepetto
 hpp-fcl:
     path: src/
     origin: https-hpp
@@ -44,6 +47,9 @@ gepetto-viewer-corba:
     compilation: dynamic_graph
 
 # Task space inverse dynamics
+eiquadprog:
+    path: src/
+    origin: https-sot
 simple_humanoid_description:
     path: src/
     origin: https-laas
