@@ -41,11 +41,9 @@ ROBOT_PROPERTIES_ALL:
 # Control Planner
 
 KINO_DYN_PLANNER:
-    parent_projects: ['COMPILATION', 'ROBOT_PROPERTIES_ALL']
+    parent_projects: ['COMPILATION', 'ROBOT_PROPERTIES_ALL', 'PYTHON_BINDING']
     repos: ['kino_dynamic_opt',
             'yaml_cpp_catkin',
-            'pybind11',
-            'pybind11_catkin',
             'pinocchio_bullet']
 
 
@@ -115,13 +113,11 @@ BOLT:
       'robot_properties_bolt']
 
 NYU_FINGER:
-    parent_projects: ['BLMC_DRIVERS', 'ROBOT_PROPERTIES_ALL','ROBOT_INTERFACES']
+    parent_projects: ['BLMC_DRIVERS', 'ROBOT_PROPERTIES_ALL','ROBOT_INTERFACES', 'PYTHON_BINDING']
     repos: [
         'nyu_finger',
         'ati_ft_sensor',
-        'blmc_robots',
-        'pybind11',
-        'pybind11_catkin'
+        'blmc_robots'
     ]
 
 # -----------------------------------------------------------------------------
