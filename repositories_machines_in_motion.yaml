@@ -59,7 +59,7 @@ yaml_cpp_catkin:
 pybind11:
     path: src/
     origin: https-pybind
-    branch: stable
+    tag: v2.5.0
 pybind11_catkin:
     path: src/
     origin: github_mm
