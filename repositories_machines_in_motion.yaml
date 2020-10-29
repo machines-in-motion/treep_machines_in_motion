@@ -175,3 +175,4 @@ trifinger_simulation:
 catkin:
     path: src/
     origin: git@github.com:ros/catkin.git
+    branch: kinetic-devel
