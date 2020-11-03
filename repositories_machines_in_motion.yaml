@@ -33,6 +33,10 @@ robot_fingers:
 trifinger_cameras:
     path: src/
     origin: github_odri
+trifinger_object_tracking:
+    path: src/
+    origin: github_odri
+
 bolt:
     path: src/
     origin: github_odri
