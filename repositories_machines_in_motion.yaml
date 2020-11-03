@@ -42,6 +42,10 @@ trifinger_cameras:
     path: src/
     origin: github_odri
     tag: real_robot_challenge_v0.1.0
+trifinger_object_tracking:
+    path: src/
+    origin: github_odri
+    tag: real_robot_challenge_v0.1.0
 bolt:
     path: src/
     origin: github_odri
