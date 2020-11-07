@@ -110,6 +110,9 @@ open-dynamic-robot-initiative.github.io.wiki:
 rqt_dynamic_graph:
     path: src/
     origin: https://github.com/MaximilienNaveau/rqt_dynamic_graph.git
+mim_msgs:
+    path: src/
+    origin: github_mm
 dynamic_graph_manager:
     path: src/
     origin: github_mm
