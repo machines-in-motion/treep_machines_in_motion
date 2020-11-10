@@ -5,47 +5,47 @@
 robot_property_base:
     path: src/
     origin: github_odri
-    tag: real_robot_challenge_phase2
+    tag: real_robot_challenge_phase3
 robot_properties_teststand:
     path: src/
     origin: github_odri
-    tag: real_robot_challenge_phase2
+    tag: real_robot_challenge_phase3
 robot_properties_solo:
     path: src/
     origin: github_odri
-    tag: real_robot_challenge_phase2
+    tag: real_robot_challenge_phase3
 robot_properties_bolt:
     path: src/
     origin: github_odri
-    tag: real_robot_challenge_phase2
+    tag: real_robot_challenge_phase3
 robot_properties_fingers:
     path: src/
     origin: github_odri
-    tag: real_robot_challenge_phase2
+    tag: real_robot_challenge_phase3
 
 # The robot low level control
 blmc_robots:
     path: src/
     origin: github_odri
-    tag: real_robot_challenge_phase2
+    tag: real_robot_challenge_phase3
 robot_interfaces:
     path: src/
     origin: github_odri
-    tag: real_robot_challenge_phase2
+    tag: real_robot_challenge_phase3
 
 # Robot-specific repos
 robot_fingers:
     path: src/
     origin: github_odri
-    tag: real_robot_challenge_phase2
+    tag: real_robot_challenge_phase3
 trifinger_cameras:
     path: src/
     origin: github_odri
-    tag: real_robot_challenge_phase2
+    tag: real_robot_challenge_phase3
 trifinger_object_tracking:
     path: src/
     origin: github_odri
-    tag: real_robot_challenge_phase2
+    tag: real_robot_challenge_phase3
 bolt:
     path: src/
     origin: github_odri
@@ -59,19 +59,19 @@ nyu_finger:
 shared_memory:
     path: src/
     origin: github_mm
-    tag: real_robot_challenge_phase2
+    tag: real_robot_challenge_phase3
 real_time_tools:
     path: src/
     origin: github_mm
-    tag: real_robot_challenge_phase2
+    tag: real_robot_challenge_phase3
 mpi_cmake_modules:
     path: src/
     origin: github_mm
-    tag: real_robot_challenge_phase2
+    tag: real_robot_challenge_phase3
 yaml_cpp_catkin:
     path: src/
     origin: github_mm
-    tag: real_robot_challenge_phase2
+    tag: real_robot_challenge_phase3
 pybind11:
     path: src/
     origin: https-pybind
@@ -79,29 +79,29 @@ pybind11:
 pybind11_catkin:
     path: src/
     origin: github_mm
-    tag: real_robot_challenge_phase2
+    tag: real_robot_challenge_phase3
 mpi_cpp_tools:
     path: src/
     origin: github_odri
 ci_example:
     path: src/
     origin: github_mm
-    tag: real_robot_challenge_phase2
+    tag: real_robot_challenge_phase3
 time_series:
     path: src/
     origin: github_mm
-    tag: real_robot_challenge_phase2
+    tag: real_robot_challenge_phase3
 synchronizer:
     path: src/
     origin: github_mm
 signal_handler:
     path: src/
     origin: github_mpiis
-    tag: real_robot_challenge_phase2
+    tag: real_robot_challenge_phase3
 serialization_utils:
     path: src/
     origin: github_mpiis
-    tag: real_robot_challenge_phase2
+    tag: real_robot_challenge_phase3
 
 # -----------------------------------------------------------------------------
 # Doc
@@ -161,15 +161,15 @@ robot_estimation:
 ati_ft_sensor:
     path: src/
     origin: github_odri
-    tag: real_robot_challenge_phase2
+    tag: real_robot_challenge_phase3
 blmc_drivers:
     path: src/
     origin: github_odri
-    tag: real_robot_challenge_phase2
+    tag: real_robot_challenge_phase3
 master-board:
     path: src/
     origin: github_odri
-    tag: real_robot_challenge_phase2
+    tag: real_robot_challenge_phase3
 mw_dual_motor_torque_ctrl:
     path: src/
     origin: github_odri
@@ -192,7 +192,7 @@ pinocchio_bullet:
 trifinger_simulation:
     path: src/
     origin: github_odri
-    tag: real_robot_challenge_phase2
+    tag: real_robot_challenge_phase3
 
 # -----------------------------------------------------------------------------
 # Compilation
