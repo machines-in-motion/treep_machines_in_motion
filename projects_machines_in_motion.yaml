@@ -65,17 +65,17 @@ TIME_SERIES:
     repos: ['time_series', 'signal_handler']
 CONFIGURATION_FILE_PARSING:
     parent_projects: ['COMPILATION']
-    repos: ['yaml_cpp_catkin']
+    repos: ['yaml_utils']
 PYTHON_BINDING:
     parent_projects: ['COMPILATION']
-    repos: ['pybind11', 'pybind11_catkin']
-CI_EXAMPLE:
+    repos: ['pybind11_vendor']
+PACKAGE_TEMPLATE:
     parent_projects: ['PYTHON_BINDING', 'CONFIGURATION_FILE_PARSING', 'COMPILATION']
-    repos: ['ci_example']
+    repos: ['package_template']
 
 # Contains ALL repository.
 CORE_ROBOTICS:
-    parent_projects: ['SHARED_MEMORY', 'REAL_TIME_TOOLS', 'CI_EXAMPLE', 'TIME_SERIES']
+    parent_projects: ['SHARED_MEMORY', 'REAL_TIME_TOOLS', 'PACKAGE_TEMPLATE', 'TIME_SERIES']
     repos: []
 
 
@@ -96,7 +96,8 @@ DYNAMIC_GRAPH_MANAGER:
     parent_projects: [
       'REAL_TIME_TOOLS',
       'SHARED_MEMORY',
-      'CONFIGURATION_FILE_PARSING']
+      'CONFIGURATION_FILE_PARSING',
+      'PYTHON_BINDING']
     repos: [
       'mim_msgs',
       #'rqt_dynamic_graph',

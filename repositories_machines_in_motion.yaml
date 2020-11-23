@@ -37,6 +37,9 @@ trifinger_object_tracking:
     path: src/
     origin: github_odri
 
+test_bench:
+    path: src/
+    origin: github_odri
 bolt:
     path: src/
     origin: github_odri
@@ -59,18 +62,23 @@ mpi_cmake_modules:
 yaml_cpp_catkin:
     path: src/
     origin: github_mm
-    branch: master
+yaml_utils:
+    path: src/
+    origin: github_mm
 pybind11:
     path: src/
     origin: https-pybind
     tag: v2.5.0
+pybind11_vendor:
+    path: src/
+    origin: https://github.com/ros2/pybind11_vendor.git
 pybind11_catkin:
     path: src/
     origin: github_mm
 mpi_cpp_tools:
     path: src/
     origin: github_odri
-ci_example:
+package_template:
     path: src/
     origin: github_mm
 time_series:
@@ -179,6 +187,10 @@ trifinger_simulation:
 # -----------------------------------------------------------------------------
 # Compilation
 
+ament_cmake:
+    path: src
+    origin: https://github.com/ament/ament_cmake
+    branch: eloquent
 catkin:
     path: src/
     origin: git@github.com:ros/catkin.git
