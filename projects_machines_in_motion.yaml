@@ -100,8 +100,9 @@ DYNAMIC_GRAPH_MANAGER:
     repos: [
       'mim_msgs',
       #'rqt_dynamic_graph',
-      'dynamic_graph_manager',
-      'dg_tutorial_with_turtlesim']
+      'dynamic_graph_manager'
+      #'dg_tutorial_with_turtlesim'
+      ]
 
 # -----------------------------------------------------------------------------
 # Robots
