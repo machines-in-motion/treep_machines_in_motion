@@ -67,6 +67,9 @@ pybind11:
 pybind11_catkin:
     path: src/
     origin: github_mm
+pybind11_opencv:
+    path: src/
+    origin: github_odri
 mpi_cpp_tools:
     path: src/
     origin: github_odri
