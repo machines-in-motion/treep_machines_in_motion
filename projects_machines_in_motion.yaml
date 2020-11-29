@@ -99,8 +99,9 @@ DYNAMIC_GRAPH_MANAGER:
     repos: [
       'mim_msgs',
       #'rqt_dynamic_graph',
-      'dynamic_graph_manager',
-      'dg_tutorial_with_turtlesim']
+      'dynamic_graph_manager'
+      #'dg_tutorial_with_turtlesim'
+      ]
 
 # -----------------------------------------------------------------------------
 # Robots
@@ -130,10 +131,12 @@ ROBOT_INTERFACES:
 ROBOT_FINGERS:
     parent_projects: ['BLMC_DRIVERS', 'ROBOT_PROPERTIES_ALL', 'ROBOT_INTERFACES']
     repos: [
+        'pybind11_opencv',
         'ati_ft_sensor',
         'blmc_robots',
         'robot_fingers',
         'trifinger_cameras',
+        'trifinger_object_tracking',
         'robot_properties_fingers',
         'trifinger_simulation',
         ]
