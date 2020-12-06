@@ -43,7 +43,7 @@ ROBOT_PROPERTIES_ALL:
 KINO_DYN_PLANNER:
     parent_projects: ['COMPILATION', 'ROBOT_PROPERTIES_ALL', 'PYTHON_BINDING']
     repos: ['kino_dynamic_opt',
-            'yaml_cpp_catkin',
+            'yaml_utils',
             'pinocchio_bullet']
 
 
