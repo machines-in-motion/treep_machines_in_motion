@@ -21,7 +21,7 @@ BLMC_DRIVERS:
 # robot models
 ROBOT_PROPERTY_BASE:
     parent_projects: ['COMPILATION']
-    repos: []
+    repos: ['pinocchio_bullet']
 ROBOT_PROPERTIES_TESTSTAND:
     parent_projects: ['ROBOT_PROPERTY_BASE']
     repos: ['robot_properties_teststand']
@@ -43,8 +43,7 @@ ROBOT_PROPERTIES_ALL:
 KINO_DYN_PLANNER:
     parent_projects: ['COMPILATION', 'ROBOT_PROPERTIES_ALL', 'PYTHON_BINDING']
     repos: ['kino_dynamic_opt',
-            'yaml_utils',
-            'pinocchio_bullet']
+            'yaml_utils']
 
 
 # -----------------------------------------------------------------------------
