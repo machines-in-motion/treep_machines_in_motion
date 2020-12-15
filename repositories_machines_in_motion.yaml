@@ -198,3 +198,5 @@ catkin:
     path: src/
     origin: git@github.com:ros/catkin.git
     branch: kinetic-devel
+googletest:
+    origin: git@github.com:google/googletest.git
