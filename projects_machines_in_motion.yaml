@@ -65,7 +65,7 @@ CONFIGURATION_FILE_PARSING:
     repos: ['yaml_utils']
 PYTHON_BINDING:
     parent_projects: ['COMPILATION']
-    repos: ['pybind11_vendor']
+    repos: ['pybind11']
 PACKAGE_TEMPLATE:
     parent_projects: ['PYTHON_BINDING', 'CONFIGURATION_FILE_PARSING', 'COMPILATION']
     repos: ['package_template']
