@@ -50,7 +50,7 @@ KINO_DYN_PLANNER:
 # Core Robotics
 
 COMPILATION:
-    repos: ['mpi_cmake_modules']
+    repos: ['mpi_cmake_modules', 'googletest']
 SHARED_MEMORY:
     parent_projects: ['COMPILATION', 'PYTHON_BINDING']
     repos: ['shared_memory', 'serialization_utils']
