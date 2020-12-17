@@ -21,7 +21,7 @@ BLMC_DRIVERS:
 # robot models
 ROBOT_PROPERTY_BASE:
     parent_projects: ['COMPILATION']
-    repos: ['pinocchio_bullet']
+    repos: ['bullet_utils']
 ROBOT_PROPERTIES_TESTSTAND:
     parent_projects: ['ROBOT_PROPERTY_BASE']
     repos: ['robot_properties_teststand']

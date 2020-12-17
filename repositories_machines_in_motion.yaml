@@ -180,9 +180,10 @@ mw_gui_universal:
 # -----------------------------------------------------------------------------
 # Robot Simulation
 
-pinocchio_bullet:
+bullet_utils:
     path: src/
     origin: github_mm
+    branch: main
 trifinger_simulation:
     path: src/
     origin: github_odri
