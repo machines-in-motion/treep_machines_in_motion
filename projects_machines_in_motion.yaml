@@ -82,6 +82,7 @@ CORE_ROBOTICS:
 DOC:
     repos: [
       'machines-in-motion.github.io',
+      'machines-in-motion.github.io.wiki',
       'open-dynamic-robot-initiative.github.io',
       'open-dynamic-robot-initiative.github.io.wiki']
 

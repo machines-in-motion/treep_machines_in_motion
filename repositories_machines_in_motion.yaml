@@ -150,7 +150,13 @@ kino_dynamic_opt:
 robot_estimation:
     path: src/
     origin: github_mm
-
+mim_estimation:
+    path: src/
+    origin: github_mm
+mim_control:
+    path: src/
+    origin: github_mm
+    branch: main
 
 # -----------------------------------------------------------------------------
 # Robot Drivers and Firmware
