@@ -208,3 +208,11 @@ catkin:
 googletest:
     path: src/
     origin: git@github.com:google/googletest.git
+
+# ------------------------------------------------------------------------------
+# Robot demos and research
+
+solo_walking:
+    path: src/
+    origin: github_mm
+    branch: main
