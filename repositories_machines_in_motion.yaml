@@ -22,6 +22,9 @@ robot_properties_fingers:
 blmc_robots:
     path: src/
     origin: github_odri
+odri_control_interface:
+    path: src/
+    origin: github_odri
 robot_interfaces:
     path: src/
     origin: github_odri
