@@ -103,6 +103,14 @@ DYNAMIC_GRAPH_MANAGER:
       #'dg_tutorial_with_turtlesim'
       ]
 
+DG_TUTORIAL:
+    parent_projects: [
+      'DYNAMIC_GRAPH_MANAGER',
+    ]
+    repos: [
+      'dg_tutorial_with_turtlesim'
+    ]
+
 # -----------------------------------------------------------------------------
 # Robots
 
