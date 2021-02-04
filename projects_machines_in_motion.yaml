@@ -126,7 +126,8 @@ NYU_FINGER:
     repos: [
         'nyu_finger',
         'ati_ft_sensor',
-        'blmc_robots'
+        'blmc_robots',
+        'odri_control_interface'
     ]
 
 # -----------------------------------------------------------------------------
