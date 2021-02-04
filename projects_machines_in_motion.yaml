@@ -38,13 +38,17 @@ ROBOT_PROPERTIES_ALL:
 
 
 # -----------------------------------------------------------------------------
-# Control Planner
+# Control/Planner
 
 KINO_DYN_PLANNER:
     parent_projects: ['COMPILATION', 'ROBOT_PROPERTIES_ALL', 'PYTHON_BINDING']
     repos: ['kino_dynamic_opt',
             'yaml_utils']
 
+MIM_CONTROL:
+    parent_projects: ['COMPILATION', 'PYTHON_BINDING',
+                      'CONFIGURATION_FILE_PARSING']
+    repos: ['mim_control']
 
 # -----------------------------------------------------------------------------
 # Core Robotics
@@ -70,7 +74,7 @@ PACKAGE_TEMPLATE:
     parent_projects: ['PYTHON_BINDING', 'CONFIGURATION_FILE_PARSING', 'COMPILATION']
     repos: ['package_template']
 
-# Contains ALL repository.
+# Contains all core-robotics repository.
 CORE_ROBOTICS:
     parent_projects: ['SHARED_MEMORY', 'REAL_TIME_TOOLS', 'PACKAGE_TEMPLATE', 'TIME_SERIES']
     repos: []
