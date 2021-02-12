@@ -50,6 +50,13 @@ MIM_CONTROL:
                       'CONFIGURATION_FILE_PARSING']
     repos: ['mim_control']
 
+REACTIVE_PLANNERS:
+    parent_projects: [
+        'ROBOT_PROPERTIES_BOLT', 'ROBOT_PROPERTIES_SOLO',
+        'MIM_CONTROL', 'DYNAMIC_GRAPH_MANAGER'
+    ]
+    repos: ['reactive_planners']
+
 # -----------------------------------------------------------------------------
 # Core Robotics
 

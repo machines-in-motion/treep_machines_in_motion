@@ -161,6 +161,9 @@ mim_control:
     path: src/
     origin: github_mm
     branch: main
+reactive_planners:
+    path: src/
+    origin: github_mm
 
 # -----------------------------------------------------------------------------
 # Robot Drivers and Firmware
