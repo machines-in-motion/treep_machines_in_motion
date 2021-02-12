@@ -53,7 +53,9 @@ MIM_CONTROL:
 REACTIVE_PLANNERS:
     parent_projects: [
         'ROBOT_PROPERTIES_BOLT', 'ROBOT_PROPERTIES_SOLO',
-        'MIM_CONTROL', 'DYNAMIC_GRAPH_MANAGER'
+        'MIM_CONTROL',
+        # For dynamic graph support.
+        'DYNAMIC_GRAPH_MANAGER', 'BLMC_ROBOTS'
     ]
     repos: ['reactive_planners']
 
