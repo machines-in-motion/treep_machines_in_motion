@@ -207,7 +207,7 @@ trifinger_simulation:
 ament_cmake:
     path: src
     origin: https://github.com/ament/ament_cmake
-    branch: eloquent
+    branch: dashing
 catkin:
     path: src/
     origin: git@github.com:ros/catkin.git
