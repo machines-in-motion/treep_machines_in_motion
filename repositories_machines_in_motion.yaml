@@ -204,6 +204,10 @@ trifinger_simulation:
 # -----------------------------------------------------------------------------
 # Compilation
 
+ament_package:
+    path: src
+    origin: https://github.com/ament/ament_package
+    branch: dashing
 ament_cmake:
     path: src
     origin: https://github.com/ament/ament_cmake

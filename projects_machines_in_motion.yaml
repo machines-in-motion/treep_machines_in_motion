@@ -160,3 +160,9 @@ ROBOT_FINGERS:
         'robot_properties_fingers',
         'trifinger_simulation',
         ]
+
+# ------------------------------------------------------------------------------
+# ROS2
+
+AMENT:
+    repos: ['ament_cmake', 'ament_package']
