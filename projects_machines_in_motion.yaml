@@ -131,8 +131,16 @@ BOLT:
     parent_projects: ['BLMC_ROBOTS']
     repos: [
       'bolt',
-      'dg_bolt',
       'robot_properties_bolt']
+
+TESTSTAND:
+    parent_projects: ['CORE_ROBOTICS', 'ROBOT_PROPERTIES_TESTSTAND', 'DYNAMIC_GRAPH_MANAGER']
+    repos: [
+      'teststand',
+      'ati_ft_sensor',
+      'blmc_drivers',
+      'odri_control_interface',
+      'master-board']
 
 NYU_FINGER:
     parent_projects: ['BLMC_DRIVERS', 'ROBOT_PROPERTIES_ALL','ROBOT_INTERFACES', 'PYTHON_BINDING']

@@ -47,6 +47,10 @@ test_bench:
 bolt:
     path: src/
     origin: github_odri
+teststand:
+    path: src/
+    origin: github_odri
+    branch: main
 nyu_finger:
     path: src/
     origin: github_odri
