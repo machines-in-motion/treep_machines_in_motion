@@ -142,6 +142,16 @@ TESTSTAND:
       'odri_control_interface',
       'master-board']
 
+SOLO:
+    parent_projects: ['CORE_ROBOTICS', 'ROBOT_PROPERTIES_SOLO', 'DYNAMIC_GRAPH_MANAGER']
+    repos: [
+      'blmc_robots',
+      'odri_control_interface',
+      'master-board',
+      'blmc_drivers'
+    ]
+
+
 NYU_FINGER:
     parent_projects: ['BLMC_DRIVERS', 'ROBOT_PROPERTIES_ALL','ROBOT_INTERFACES', 'PYTHON_BINDING']
     repos: [
