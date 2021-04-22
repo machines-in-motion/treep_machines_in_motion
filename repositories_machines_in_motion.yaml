@@ -1,125 +1,112 @@
 # -----------------------------------------------------------------------------
-# BLMC
-
-# robot models
-robot_property_base:
-    path: src/
-    origin: github_odri
-robot_properties_teststand:
-    path: src/
-    origin: github_odri
-robot_properties_solo:
-    path: src/
-    origin: github_odri
-robot_properties_bolt:
-    path: src/
-    origin: github_odri
-robot_properties_fingers:
-    path: src/
-    origin: github_odri
-
-# The robot low level control
-blmc_robots:
-    path: src/
-    origin: github_odri
-odri_control_interface:
-    path: src/
-    origin: github_odri
-    branch: main
-robot_interfaces:
-    path: src/
-    origin: github_odri
-
-# Robot-specific repos
-robot_fingers:
-    path: src/
-    origin: github_odri
-trifinger_cameras:
-    path: src/
-    origin: github_odri
-trifinger_object_tracking:
-    path: src/
-    origin: github_odri
-
-test_bench:
-    path: src/
-    origin: github_odri
-bolt:
-    path: src/
-    origin: github_odri
-teststand:
-    path: src/
-    origin: github_odri
-    branch: main
-nyu_finger:
-    path: src/
-    origin: github_odri
-
-# -----------------------------------------------------------------------------
 # Core Robotics
 
 shared_memory:
     path: src/
-    origin: github_mm
+    origin: mim
 real_time_tools:
     path: src/
-    origin: github_mm
+    origin: mim
 mpi_cmake_modules:
     path: src/
-    origin: github_mm
-yaml_cpp_catkin:
-    path: src/
-    origin: github_mm
+    origin: mim
 yaml_utils:
     path: src/
-    origin: github_mm
+    origin: mim
 pybind11:
     path: src/
-    origin: https-pybind
+    origin: pybind
     tag: v2.5.0
-pybind11_catkin:
-    path: src/
-    origin: github_mm
-pybind11_vendor:
-    path: src/
-    origin: https://github.com/ros2/pybind11_vendor.git
 pybind11_opencv:
     path: src/
-    origin: github_odri
-mpi_cpp_tools:
-    path: src/
-    origin: github_odri
+    origin: odri
 package_template:
     path: src/
-    origin: github_mm
+    origin: mim
 time_series:
     path: src/
-    origin: github_mm
+    origin: mim
 synchronizer:
     path: src/
-    origin: github_mm
+    origin: mim
 signal_handler:
     path: src/
-    origin: github_mpiis
+    origin: mpi-is
 serialization_utils:
     path: src/
-    origin: github_mpiis
+    origin: mpi-is
+
+# -----------------------------------------------------------------------------
+# BLMC
+
+# robot models
+robot_properties_teststand:
+    path: src/
+    origin: odri
+robot_properties_solo:
+    path: src/
+    origin: odri
+robot_properties_bolt:
+    path: src/
+    origin: odri
+robot_properties_fingers:
+    path: src/
+    origin: odri
+
+# The robot low level control
+odri_control_interface:
+    path: src/
+    origin: odri
+    branch: main
+robot_interfaces:
+    path: src/
+    origin: odri
+
+# Robot-specific repos
+robot_fingers:
+    path: src/
+    origin: odri
+trifinger_cameras:
+    path: src/
+    origin: odri
+trifinger_object_tracking:
+    path: src/
+    origin: odri
+test_bench:
+    path: src/
+    origin: odri
+blmc_robots:
+    path: src/
+    origin: odri
+teststand:
+    path: src/
+    origin: github_odri
+    branch: main
+    path: src/
+    origin: odri
+    branch: main
+bolt:
+    path: src/
+    origin: odri
+nyu_finger:
+    path: src/
+    origin: odri
 
 # -----------------------------------------------------------------------------
 # Doc
 
 machines-in-motion.github.io:
     path: src/
-    origin: github_mm
+    origin: mim
 machines-in-motion.github.io.wiki:
     path: src/
-    origin: github_mm
+    origin: mim
 open-dynamic-robot-initiative.github.io:
     path: src/
-    origin: github_odri
+    origin: odri
 open-dynamic-robot-initiative.github.io.wiki:
     path: src/
-    origin: github_odri
+    origin: odri
 
 
 # -----------------------------------------------------------------------------
@@ -131,22 +118,22 @@ rqt_dynamic_graph:
     origin: https://github.com/MaximilienNaveau/rqt_dynamic_graph.git
 mim_msgs:
     path: src/
-    origin: github_mm
+    origin: mim
 dynamic_graph_manager:
     path: src/
-    origin: github_mm
+    origin: mim
 dg_tools:
     path: src/
-    origin: github_mm
+    origin: mim
 dg_blmc_robots:
     path: src/
-    origin: github_mm
+    origin: mim
 dg_bolt:
     path: src/
-    origin: github_mm
+    origin: mim
 dg_tutorial_with_turtlesim:
     path: src/
-    origin: github_mm
+    origin: mim
 
 
 # -----------------------------------------------------------------------------
@@ -154,80 +141,83 @@ dg_tutorial_with_turtlesim:
 
 kino_dynamic_opt:
     path: src/
-    origin: github_mm
+    origin: mim
 robot_estimation:
     path: src/
-    origin: github_mm
+    origin: mim
 mim_estimation:
     path: src/
-    origin: github_mm
+    origin: mim
 mim_control:
     path: src/
-    origin: github_mm
+    origin: mim
     branch: main
 reactive_planners:
     path: src/
-    origin: github_mm
+    origin: mim
 
 # -----------------------------------------------------------------------------
 # Robot Drivers and Firmware
 
 ati_ft_sensor:
     path: src/
-    origin: github_odri
+    origin: odri
 blmc_drivers:
     path: src/
-    origin: github_odri
+    origin: odri
 master-board:
     path: src/
-    origin: github_odri
+    origin: odri
 mw_dual_motor_torque_ctrl:
     path: src/
-    origin: github_odri
+    origin: odri
 user_config_f28069m_drv8305:
     path: src/
-    origin: github_odri
+    origin: odri
 amd_motorware_ext:
     path: src/
-    origin: github_odri
+    origin: odri
 mw_gui_universal:
     path: src/
-    origin: github_odri
+    origin: odri
 
 # -----------------------------------------------------------------------------
 # Robot Simulation
 
 bullet_utils:
     path: src/
-    origin: github_mm
+    origin: mim
+    branch: main
+raisim_utils:
+    path: src/
+    origin: mim
     branch: main
 trifinger_simulation:
     path: src/
-    origin: github_odri
+    origin: odri
 
 # -----------------------------------------------------------------------------
 # Compilation
 
 ament_package:
     path: src
-    origin: https://github.com/ament/ament_package
+    origin: ament
     branch: dashing
 ament_cmake:
     path: src
-    origin: https://github.com/ament/ament_cmake
+    origin: ament
     branch: dashing
 catkin:
     path: src/
-    origin: git@github.com:ros/catkin.git
+    origin: ros
     branch: kinetic-devel
 googletest:
     path: src/
-    origin: git@github.com:google/googletest.git
+    origin: google
 
 # ------------------------------------------------------------------------------
 # Robot demos and research
 
-solo_walking:
+dg_demos:
     path: src/
-    origin: github_mm
-    branch: main
+    origin: mim

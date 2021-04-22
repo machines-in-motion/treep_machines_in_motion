@@ -1,12 +1,60 @@
 origin_prefixes:
-    github_mm: 'git@github.com:machines-in-motion/'
-    github_mpiis: 'git@github.com:MPI-IS/'
-    github_odri: 'git@github.com:open-dynamic-robot-initiative/'
-    git-pybind: 'git@github.com:pybind/'
-    git-loco3d: 'git@gepgitlab.laas.fr:loco-3d/'
+    mim: 'git@github.com:machines-in-motion/'
+    ssh-mim: 'git@github.com:machines-in-motion/'
+    https-mim: 'https://github.com/machines-in-motion/'
+
+    odri: 'git@github.com:open-dynamic-robot-initiative/'
+    ssh-odri: 'git@github.com:open-dynamic-robot-initiative/'
+    https-odri: 'https://github.com/open-dynamic-robot-initiative/'
+
+    mpi-is: 'git@github.com:MPI-IS/'
+    ssh-mpi-is: 'git@github.com:MPI-IS/'
+    https-mpi-is: 'https://github.com/MPI-IS/'
+
+    sow-is: 'git@gitlab.is.tuebingen.mpg.de:SW/'
+    ssh-sow-is: 'git@gitlab.is.tuebingen.mpg.de:SW/'
+    https-sow-is: 'https://gitlab.is.tuebingen.mpg.de/SW/'
+
+    sow: 'git@gitlab.tuebingen.mpg.de:SoW/'
+    ssh-sow: 'git@gitlab.tuebingen.mpg.de:SoW/'
+    https-sow: 'https://gitlab.tuebingen.mpg.de/SoW/'
+
+    pybind: 'git@github.com:pybind/'
+    ssh-pybind: 'git@github.com:pybind/'
     https-pybind: 'https://github.com/pybind/'
+    
+    loco3d: 'git@github.com:loco-3d/crocoddyl/'
+    ssh-loco3d: 'git@github.com:loco-3d/crocoddyl/'
+    https-loco3d: 'https://github.com/loco-3d/crocoddyl/'
+    
+    sot: 'git@github.com:stack-of-tasks/'
+    ssh-sot: 'git@github.com:stack-of-tasks/'
     https-sot: 'https://github.com/stack-of-tasks/'
+
+    hpp: 'git@github.com:humanoid-path-planner/'
+    ssh-hpp: 'git@github.com:humanoid-path-planner/'
     https-hpp: 'https://github.com/humanoid-path-planner/'
+    
+    gepetto: 'git@github.com/Gepetto/'
+    ssh-gepetto: 'git@github.com/Gepetto/'
     https-gepetto: 'https://github.com/Gepetto/'
+
+    laas: 'git@github.com:laas/'
+    ssh-laas: 'git@github.com:laas/'
     https-laas: 'https://github.com/laas/'
+
+    jrl-umi3218: 'git@github.com:jrl-umi3218/'
+    ssh-jrl-umi3218: 'git@github.com:jrl-umi3218/'
     https-jrl-umi3218: 'https://github.com/jrl-umi3218/'
+
+    ament: 'git@github.com:ament/'
+    ssh-ament: 'git@github.com:ament/'
+    https-ament: 'https://github.com/ament/'
+
+    ros: 'git@github.com:ros/'
+    ssh-ros: 'git@github.com:ros/'
+    https-ros: 'https://github.com/ros/'
+
+    google: 'git@github.com:google/'
+    ssh-google: 'git@github.com:google/'
+    https-google: 'https://github.com/google/'

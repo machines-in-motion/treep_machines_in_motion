@@ -1,65 +1,4 @@
 # -----------------------------------------------------------------------------
-# BLMC
-
-# robot Firmware
-BLMC_FIRMWARE:
-    repos: ['master-board','udriver_firmware']
-
-BLMC_BASIC:
-    parent_projects: []
-    repos: ['motorware', 'amd_motorware_ext', 'user_config_f28069m_drv8305', 'mw_dual_motor_torque_ctrl']
-
-BLMC_DEBUG_GUI:
-    parent_projects: ['BLMC_BASIC']
-    repos: ['mw_gui_universal']
-
-# robot drivers
-BLMC_DRIVERS:
-    parent_projects: ['COMPILATION']
-    repos: ['real_time_tools', 'master-board', 'blmc_drivers']
-
-# robot models
-ROBOT_PROPERTY_BASE:
-    parent_projects: ['COMPILATION']
-    repos: ['bullet_utils']
-ROBOT_PROPERTIES_TESTSTAND:
-    parent_projects: ['ROBOT_PROPERTY_BASE']
-    repos: ['robot_properties_teststand']
-ROBOT_PROPERTIES_SOLO:
-    parent_projects: ['ROBOT_PROPERTY_BASE']
-    repos: ['robot_properties_solo']
-ROBOT_PROPERTIES_BOLT:
-    parent_projects: ['ROBOT_PROPERTY_BASE']
-    repos: ['robot_properties_bolt']
-# ALL robot models
-ROBOT_PROPERTIES_ALL:
-    parent_projects: ['ROBOT_PROPERTIES_TESTSTAND', 'ROBOT_PROPERTIES_SOLO', 'ROBOT_PROPERTIES_BOLT']
-    repos: []
-
-
-# -----------------------------------------------------------------------------
-# Control/Planner
-
-KINO_DYN_PLANNER:
-    parent_projects: ['COMPILATION', 'ROBOT_PROPERTIES_ALL', 'PYTHON_BINDING']
-    repos: ['kino_dynamic_opt',
-            'yaml_utils']
-
-MIM_CONTROL:
-    parent_projects: ['COMPILATION', 'PYTHON_BINDING',
-                      'CONFIGURATION_FILE_PARSING']
-    repos: ['mim_control']
-
-REACTIVE_PLANNERS:
-    parent_projects: [
-        'ROBOT_PROPERTIES_BOLT', 'ROBOT_PROPERTIES_SOLO',
-        'MIM_CONTROL',
-        # For dynamic graph support.
-        'DYNAMIC_GRAPH_MANAGER', 'BLMC_ROBOTS'
-    ]
-    repos: ['reactive_planners']
-
-# -----------------------------------------------------------------------------
 # Core Robotics
 
 COMPILATION:
@@ -71,8 +10,8 @@ REAL_TIME_TOOLS:
     parent_projects: ['COMPILATION']
     repos: ['real_time_tools']
 TIME_SERIES:
-    parent_projects: ['COMPILATION']
-    repos: ['time_series', 'signal_handler']
+    parent_projects: ['COMPILATION', ]
+    repos: ['time_series', 'signal_handler', 'shared_memory']
 CONFIGURATION_FILE_PARSING:
     parent_projects: ['COMPILATION']
     repos: ['yaml_utils']
@@ -82,12 +21,144 @@ PYTHON_BINDING:
 PACKAGE_TEMPLATE:
     parent_projects: ['PYTHON_BINDING', 'CONFIGURATION_FILE_PARSING', 'COMPILATION']
     repos: ['package_template']
-
 # Contains all core-robotics repository.
 CORE_ROBOTICS:
     parent_projects: ['SHARED_MEMORY', 'REAL_TIME_TOOLS', 'PACKAGE_TEMPLATE', 'TIME_SERIES']
     repos: []
 
+#------------------------------------------------------------------------------
+# Simulation
+
+BULLET_UTILS_DEPENDENCIES:
+    parent_projects: ['COMPILATION']
+BULLET_UTILS:
+    parent_projects: ['BULLET_UTILS_DEPENDENCIES']
+    repos: ['bullet_utils']
+
+# -----------------------------------------------------------------------------
+# BLMC drivers, firmware, interface, ...
+
+# robot Firmware
+BLMC_FIRMWARE:
+    repos: ['master-board','udriver_firmware']
+BLMC_BASIC:
+    parent_projects: []
+    repos: ['motorware', 'amd_motorware_ext', 'user_config_f28069m_drv8305', 'mw_dual_motor_torque_ctrl']
+BLMC_DEBUG_GUI:
+    parent_projects: ['BLMC_BASIC']
+    repos: ['mw_gui_universal']
+# robot drivers
+BLMC_DRIVERS:
+    parent_projects: ['COMPILATION', 'TIME_SERIES', 'CONFIGURATION_FILE_PARSING']
+    repos: ['real_time_tools', 'master-board', 'blmc_drivers', 'odri_control_interface']
+
+# -----------------------------------------------------------------------------
+# Robot Properties
+
+ROBOT_PROPERTIES_TESTSTAND_DEPENDENCIES:
+    parent_projects: ['BULLET_UTILS']
+ROBOT_PROPERTIES_TESTSTAND:
+    parent_projects: ['ROBOT_PROPERTIES_TESTSTAND_DEPENDENCIES']
+    repos: ['robot_properties_teststand']
+
+ROBOT_PROPERTIES_SOLO_DEPENDENCIES:
+    parent_projects: ['BULLET_UTILS']
+ROBOT_PROPERTIES_SOLO:
+    parent_projects: ['ROBOT_PROPERTIES_SOLO_DEPENDENCIES']
+    repos: ['robot_properties_solo']
+
+ROBOT_PROPERTIES_BOLT_DEPENDENCIES:
+    parent_projects: ['BULLET_UTILS']
+ROBOT_PROPERTIES_BOLT:
+    parent_projects: ['ROBOT_PROPERTIES_BOLT_DEPENDENCIES']
+    repos: ['robot_properties_bolt']
+
+ROBOT_PROPERTIES_FINGERS_DEPENDENCIES:
+    parent_projects: ['BULLET_UTILS']
+ROBOT_PROPERTIES_FINGERS:
+    parent_projects: ['ROBOT_PROPERTIES_FINGERS_DEPENDENCIES']
+    repos: ['robot_properties_fingers']
+
+# ALL robot models
+ROBOT_PROPERTIES_ALL:
+    parent_projects: [
+      'ROBOT_PROPERTIES_TESTSTAND',
+      'ROBOT_PROPERTIES_SOLO',
+      'ROBOT_PROPERTIES_BOLT']
+
+# -----------------------------------------------------------------------------
+# Robots
+
+SOLO_DEPENDENCIES:
+    parent_projects: ['BLMC_DRIVERS', 'ROBOT_PROPERTIES_SOLO', 'PYTHON_BINDING']
+SOLO:
+    parent_projects: ['SOLO_DEPENDENCIES']
+    repos: ['blmc_robots']
+
+BOLT_DEPENDENCIES:
+    parent_projects: ['BLMC_DRIVERS', 'ROBOT_PROPERTIES_BOLT', 'PYTHON_BINDING']
+BOLT:
+    parent_projects: [BOLT_DEPENDENCIES]
+    repos: ['bolt']
+
+TESTSTAND_DEPENDENCIES:
+    parent_projects: ['BLMC_DRIVERS', 'ROBOT_PROPERTIES_TESTSTAND',
+                      'PYTHON_BINDING']
+    repos: ['ati_ft_sensor']
+TESTSTAND:
+    parent_projects: ['TESTSTAND_DEPENDENCIES']
+    repos: ['teststand']
+
+NYU_FINGER_DEPENDENCIES:
+    parent_projects: [
+      'BLMC_DRIVERS', 'ROBOT_PROPERTIES_ALL','ROBOT_INTERFACES',
+      'PYTHON_BINDING'
+    ]
+    repos: ['ati_ft_sensor', 'blmc_robots']
+NYU_FINGER:
+    parent_projects: ['NYU_FINGER_DEPENDENCIES']
+    repos: ['nyu_finger']
+
+ROBOT_FINGERS_DEPENDENCIES:
+    parent_projects: ['BLMC_DRIVERS', 'ROBOT_INTERFACES']
+    repos: [
+      'pybind11_opencv',
+      'trifinger_cameras',
+      'trifinger_object_tracking',
+      'robot_properties_fingers',
+      'trifinger_simulation',
+    ]
+ROBOT_FINGERS:
+    parent_projects: ['ROBOT_FINGERS_DEPENDENCIES']
+    repos: ['robot_fingers']
+
+# -----------------------------------------------------------------------------
+# Control/Planner
+
+KINO_DYN_PLANNER_DEPENDENCIES:
+    parent_projects: ['COMPILATION', 'ROBOT_PROPERTIES_ALL', 'PYTHON_BINDING', 
+                      'CONFIGURATION_FILE_PARSING']
+KINO_DYN_PLANNER:
+    parent_projects: ['KINO_DYN_PLANNER_DEPENDENCIES']
+    repos: ['kino_dynamic_opt']
+
+MIM_CONTROL_DEPENDENCIES:
+    parent_projects: [
+      'COMPILATION', 'PYTHON_BINDING', 'CONFIGURATION_FILE_PARSING'
+    ]
+MIM_CONTROL:
+    parent_projects: ['MIM_CONTROL_DEPENDENCIES']
+    repos: ['mim_control']
+
+REACTIVE_PLANNERS_DEPENDENCIES:
+    parent_projects: [
+        'ROBOT_PROPERTIES_BOLT', 'ROBOT_PROPERTIES_SOLO', 'MIM_CONTROL',
+        'CONFIGURATION_FILE_PARSING', 
+    ]
+    repos: ['real_time_tools']
+REACTIVE_PLANNERS:
+    parent_projects: ['REACTIVE_PLANNERS_DEPENDENCIES']
+    repos: ['reactive_planners']
 
 # -----------------------------------------------------------------------------
 # Docs
@@ -99,40 +170,23 @@ DOC:
       'open-dynamic-robot-initiative.github.io',
       'open-dynamic-robot-initiative.github.io.wiki']
 
-
 # -----------------------------------------------------------------------------
-# Dynamic Graph Manager
+# Robot Interfaces
 
-DYNAMIC_GRAPH_MANAGER:
+# Robot interface
+ROBOT_INTERFACES_DEPENDENCIES:
+    parent_projects: ['CORE_ROBOTICS']
+ROBOT_INTERFACES:
+    parent_projects: ['ROBOT_INTERFACES_DEPENDENCIES']
+    repos: ['robot_interfaces']
+
+# Dynamic Graph Manager
+DYNAMIC_GRAPH_MANAGER_DEPENDENCIES:
     parent_projects: [
       'REAL_TIME_TOOLS',
       'SHARED_MEMORY',
       'CONFIGURATION_FILE_PARSING',
-      'PYTHON_BINDING']
-    repos: [
-      'mim_msgs',
-      #'rqt_dynamic_graph',
-      'dynamic_graph_manager'
-      #'dg_tutorial_with_turtlesim'
-      ]
-
-DG_TUTORIAL:
-    parent_projects: [
-      'DYNAMIC_GRAPH_MANAGER',
-    ]
-    repos: [
-      'dg_tutorial_with_turtlesim'
-    ]
-
-# -----------------------------------------------------------------------------
-# Robots
-
-BOLT:
-    parent_projects: ['BLMC_ROBOTS']
-    repos: [
-      'bolt',
-      'robot_properties_bolt']
-
+      'PYTHON_BINDING'
 TESTSTAND:
     parent_projects: ['CORE_ROBOTICS', 'ROBOT_PROPERTIES_TESTSTAND', 'DYNAMIC_GRAPH_MANAGER']
     repos: [
@@ -152,32 +206,17 @@ SOLO:
     ]
 
 
-NYU_FINGER:
-    parent_projects: ['BLMC_DRIVERS', 'ROBOT_PROPERTIES_ALL','ROBOT_INTERFACES', 'PYTHON_BINDING']
-    repos: [
-        'nyu_finger',
-        'ati_ft_sensor',
-        'blmc_robots',
-        'odri_control_interface'
     ]
+    repos: ['mim_msgs']
+DYNAMIC_GRAPH_MANAGER:
+    parent_projects: ['DYNAMIC_GRAPH_MANAGER_DEPENDENCIES']
+    repos: ['dynamic_graph_manager']
 
-# -----------------------------------------------------------------------------
-# Robot Interfaces
-
-ROBOT_INTERFACES:
-    parent_projects: ['CORE_ROBOTICS']
-    repos: ['robot_interfaces', 'time_series', 'signal_handler']
-
-ROBOT_FINGERS:
-    parent_projects: ['BLMC_DRIVERS', 'ROBOT_INTERFACES']
-    repos: [
-        'pybind11_opencv',
-        'robot_fingers',
-        'trifinger_cameras',
-        'trifinger_object_tracking',
-        'robot_properties_fingers',
-        'trifinger_simulation',
-        ]
+DG_TUTORIAL_WITH_TURTLESIM_DEPENDENCIES:
+    parent_projects: ['DYNAMIC_GRAPH_MANAGER']
+DG_TUTORIAL_WITH_TURTLESIM:
+    parent_projects: ['DG_TUTORIAL_WITH_TURTLESIM_DEPENDENCIES']
+    repos: ['dg_tutorial_with_turtlesim']
 
 # ------------------------------------------------------------------------------
 # ROS2

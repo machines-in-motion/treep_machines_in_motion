@@ -7,86 +7,81 @@
 # Build
 jrl-cmakemodules:
   path: src/
-  origin: https-jrl-umi3218
+  origin: jrl-umi3218
 
 # pinocchio
 example-robot-data:
     path: src/
-    origin: https-gepetto
+    origin: gepetto
 hpp-fcl:
     path: src/
-    origin: https-hpp
-    compilation: dynamic_graph
+    origin: hpp
+
 eigenpy:
     path: src/
-    origin: https-sot
-    compilation: dynamic_graph
+    origin: sot
+
 pinocchio:
     path: src/
-    origin: https-sot
-    compilation: dynamic_graph
+    origin: sot
+
 
 # dynamic-graph
 dynamic-graph:
     path: src/
-    origin: https-sot
-    compilation: dynamic_graph
+    origin: sot
+
 dynamic-graph-python:
     path: src/
-    origin: https-sot
-    compilation: dynamic_graph
+    origin: sot
+
 
 # gepetto-viewer
 gepetto-viewer:
     path: src/
-    origin: https-gepetto
-    compilation: dynamic_graph
+    origin: gepetto
+
 gepetto-viewer-corba:
     path: src/
-    origin: https-gepetto
-    compilation: dynamic_graph
+    origin: gepetto
+
 
 # Task space inverse dynamics
 eiquadprog:
     path: src/
-    origin: https-sot
+    origin: sot
 simple_humanoid_description:
     path: src/
-    origin: https-laas
-    compilation: dynamic_graph
+    origin: laas
+
 parametric-curves:
     path: src/
-    origin: https-sot
-    compilation: dynamic_graph
+    origin: sot
+
 tsid:
     path: src/
-    origin: https-sot
-    compilation: dynamic_graph
+    origin: sot
+
 
 # Stack of Task framework
 sot-core:
     path: src/
-    origin: https-sot
-    compilation: dynamic_graph
+    origin: sot
+
 sot-dynamic-pinocchio:
     path: src/
-    origin: https-sot
-    compilation: dynamic_graph
+    origin: sot
+
 sot-tools:
     path: src/
-    origin: https-sot
-    compilation: dynamic_graph
+    origin: sot
+
 sot-torque-control:
     path: src/
-    origin: https-sot
-    compilation: dynamic_graph
+    origin: sot
+
 
 # crocoddyl framework
 crocoddyl:
     path: src/
-    origin: git-loco3d
-    compilation: dynamic_graph
-crocoddyl-cpp-draft:
-    path: src/
-    origin: git-loco3d
-    compilation: dynamic_graph
+    origin: loco3d
