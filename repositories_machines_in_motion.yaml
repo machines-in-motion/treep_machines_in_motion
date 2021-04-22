@@ -221,3 +221,10 @@ googletest:
 dg_demos:
     path: src/
     origin: mim
+
+# ------------------------------------------------------------------------------
+# Project manager
+
+treep:
+    path: src
+    origin: gitlab-amd-clmc-is

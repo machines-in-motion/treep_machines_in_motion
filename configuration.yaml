@@ -11,6 +11,10 @@ origin_prefixes:
     ssh-mpi-is: 'git@github.com:MPI-IS/'
     https-mpi-is: 'https://github.com/MPI-IS/'
 
+    gitlab-amd-clmc-is: 'git@gitlab.is.tuebingen.mpg.de:amd-clmc/'
+    ssh-amd-gitlab-clmc-is: 'git@gitlab.is.tuebingen.mpg.de:amd-clmc/'
+    https-gitlab-amd-clmc-is: 'https://gitlab.is.tuebingen.mpg.de/amd-clmc/'
+
     sow-is: 'git@gitlab.is.tuebingen.mpg.de:SW/'
     ssh-sow-is: 'git@gitlab.is.tuebingen.mpg.de:SW/'
     https-sow-is: 'https://gitlab.is.tuebingen.mpg.de/SW/'
