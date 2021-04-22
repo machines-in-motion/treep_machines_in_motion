@@ -186,28 +186,7 @@ DYNAMIC_GRAPH_MANAGER_DEPENDENCIES:
       'REAL_TIME_TOOLS',
       'SHARED_MEMORY',
       'CONFIGURATION_FILE_PARSING',
-      'PYTHON_BINDING'
-TESTSTAND:
-    parent_projects: ['CORE_ROBOTICS', 'ROBOT_PROPERTIES_TESTSTAND', 'DYNAMIC_GRAPH_MANAGER']
-    repos: [
-      'teststand',
-      'ati_ft_sensor',
-      'blmc_drivers',
-      'odri_control_interface',
-      'master-board']
-
-SOLO:
-    parent_projects: ['CORE_ROBOTICS', 'ROBOT_PROPERTIES_SOLO', 'DYNAMIC_GRAPH_MANAGER']
-    repos: [
-      'blmc_robots',
-      'odri_control_interface',
-      'master-board',
-      'blmc_drivers'
-    ]
-
-
-    ]
-    repos: ['mim_msgs']
+      'PYTHON_BINDING']
 DYNAMIC_GRAPH_MANAGER:
     parent_projects: ['DYNAMIC_GRAPH_MANAGER_DEPENDENCIES']
     repos: ['dynamic_graph_manager']
