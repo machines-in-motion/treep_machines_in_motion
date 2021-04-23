@@ -93,7 +93,7 @@ SOLO_DEPENDENCIES:
     parent_projects: ['BLMC_DRIVERS', 'ROBOT_PROPERTIES_SOLO', 'PYTHON_BINDING']
 SOLO:
     parent_projects: ['SOLO_DEPENDENCIES']
-    repos: ['blmc_robots']
+    repos: ['solo']
 
 BOLT_DEPENDENCIES:
     parent_projects: ['BLMC_DRIVERS', 'ROBOT_PROPERTIES_BOLT', 'PYTHON_BINDING']
@@ -136,7 +136,7 @@ ROBOT_FINGERS:
 # Control/Planner
 
 KINO_DYN_PLANNER_DEPENDENCIES:
-    parent_projects: ['COMPILATION', 'ROBOT_PROPERTIES_ALL', 'PYTHON_BINDING', 
+    parent_projects: ['COMPILATION', 'ROBOT_PROPERTIES_ALL', 'PYTHON_BINDING',
                       'CONFIGURATION_FILE_PARSING']
 KINO_DYN_PLANNER:
     parent_projects: ['KINO_DYN_PLANNER_DEPENDENCIES']
@@ -153,7 +153,7 @@ MIM_CONTROL:
 REACTIVE_PLANNERS_DEPENDENCIES:
     parent_projects: [
         'ROBOT_PROPERTIES_BOLT', 'ROBOT_PROPERTIES_SOLO', 'MIM_CONTROL',
-        'CONFIGURATION_FILE_PARSING', 
+        'CONFIGURATION_FILE_PARSING',
     ]
     repos: ['real_time_tools']
 REACTIVE_PLANNERS:

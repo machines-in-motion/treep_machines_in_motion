@@ -75,7 +75,7 @@ trifinger_object_tracking:
 test_bench:
     path: src/
     origin: odri
-blmc_robots:
+solo:
     path: src/
     origin: odri
 teststand:
