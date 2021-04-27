@@ -18,8 +18,11 @@ CONFIGURATION_FILE_PARSING:
 PYTHON_BINDING:
     parent_projects: ['COMPILATION']
     repos: ['pybind11']
-PACKAGE_TEMPLATE:
+
+PACKAGE_TEMPLATE_DEPENDENCIES:
     parent_projects: ['PYTHON_BINDING', 'CONFIGURATION_FILE_PARSING', 'COMPILATION']
+PACKAGE_TEMPLATE:
+    parent_projects: ['PACKAGE_TEMPLATE_DEPENDENCIES']
     repos: ['package_template']
 # Contains all core-robotics repository.
 CORE_ROBOTICS:
