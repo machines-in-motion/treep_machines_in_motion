@@ -76,7 +76,5 @@ Please create an issue on github in this repository.
 ```
 ### License and Copyrights
 
-*update the date if it is a new package*
-
 License BSD-3-Clause
-Copyright (c) 2019, New York University and Max Planck Gesellschaft.
+Copyright (c) 2021, New York University and Max Planck Gesellschaft.
