@@ -8,7 +8,7 @@ SHARED_MEMORY:
     repos: ['shared_memory', 'serialization_utils']
 
 REAL_TIME_TOOLS_DEPENDENCIES:
-    parent_projects: ['COMPILATION']
+    parent_projects: ['COMPILATION', 'PYTHON_BINDING']
 REAL_TIME_TOOLS:
     parent_projects: ['REAL_TIME_TOOLS_DEPENDENCIES']
     repos: ['real_time_tools']
