@@ -3,9 +3,13 @@
 
 COMPILATION:
     repos: ['mpi_cmake_modules', 'googletest']
-SHARED_MEMORY:
+
+SHARED_MEMORY_DEPENDENCIES:
     parent_projects: ['COMPILATION', 'PYTHON_BINDING']
-    repos: ['shared_memory', 'serialization_utils']
+    repos: ['serialization_utils']
+SHARED_MEMORY:
+    parent_projects: ['SHARED_MEMORY_DEPENDENCIES']
+    repos: ['shared_memory']
 
 REAL_TIME_TOOLS_DEPENDENCIES:
     parent_projects: ['COMPILATION', 'PYTHON_BINDING']
