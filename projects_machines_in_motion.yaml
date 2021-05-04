@@ -98,8 +98,8 @@ SOLO:
     parent_projects: ['SOLO_DEPENDENCIES']
     repos: ['solo']
 DG_SOLO:
-    parent_projects: ['SOLO', 'DYNAMIC_GRAPH_MANAGER']
-    repos: ['dg_blmc_robots', 'dg_demos', 'mim_msgs']
+    parent_projects: ['SOLO', 'DYNAMIC_GRAPH_MANAGER', 'DG_TOOLS']
+    repos: ['dg_blmc_robots']
 
 BOLT_DEPENDENCIES:
     parent_projects: ['BLMC_DRIVERS', 'ROBOT_PROPERTIES_BOLT', 'PYTHON_BINDING']
@@ -193,6 +193,7 @@ DYNAMIC_GRAPH_MANAGER_DEPENDENCIES:
       'SHARED_MEMORY',
       'CONFIGURATION_FILE_PARSING',
       'PYTHON_BINDING']
+    repos: ['mim_msgs']
 DYNAMIC_GRAPH_MANAGER:
     parent_projects: ['DYNAMIC_GRAPH_MANAGER_DEPENDENCIES']
     repos: ['dynamic_graph_manager']
@@ -202,6 +203,12 @@ DG_TUTORIAL_WITH_TURTLESIM_DEPENDENCIES:
 DG_TUTORIAL_WITH_TURTLESIM:
     parent_projects: ['DG_TUTORIAL_WITH_TURTLESIM_DEPENDENCIES']
     repos: ['dg_tutorial_with_turtlesim']
+
+# ------------------------------------------------------------------------------
+# Dynamic Graph specific
+
+DG_TOOLS:
+    repos: ['dg_tools', 'vicon_sdk', 'dg_vicon_sdk', 'dg_demos']
 
 # ------------------------------------------------------------------------------
 # ROS2
