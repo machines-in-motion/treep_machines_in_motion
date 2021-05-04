@@ -97,6 +97,9 @@ SOLO_DEPENDENCIES:
 SOLO:
     parent_projects: ['SOLO_DEPENDENCIES']
     repos: ['solo']
+DG_SOLO:
+    parent_projects: ['SOLO', 'DYNAMIC_GRAPH_MANAGER']
+    repos: ['dg_blmc_robots', 'dg_demos', ]
 
 BOLT_DEPENDENCIES:
     parent_projects: ['BLMC_DRIVERS', 'ROBOT_PROPERTIES_BOLT', 'PYTHON_BINDING']
