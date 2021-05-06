@@ -180,6 +180,9 @@ amd_motorware_ext:
 mw_gui_universal:
     path: src/
     origin: odri
+vicon_sdk:
+    path: src/
+    origin: mim
 
 # -----------------------------------------------------------------------------
 # Robot Simulation
@@ -219,6 +222,9 @@ googletest:
 # Robot demos and research
 
 dg_demos:
+    path: src/
+    origin: mim
+dg_vicon_sdk:
     path: src/
     origin: mim
 
