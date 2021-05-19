@@ -63,6 +63,12 @@ BLMC_DRIVERS:
     parent_projects: ['COMPILATION', 'TIME_SERIES', 'CONFIGURATION_FILE_PARSING']
     repos: ['real_time_tools', 'master-board', 'blmc_drivers', 'odri_control_interface']
 
+# like BLMC_DRIVERS but omits packages that are not needed for direct CAN
+# communication with the boards
+BLMC_DRIVERS_CAN_ONLY:
+    parent_projects: ['COMPILATION', 'TIME_SERIES', 'CONFIGURATION_FILE_PARSING']
+    repos: ['real_time_tools', 'master-board', 'blmc_drivers']
+
 # -----------------------------------------------------------------------------
 # Robot Properties
 
@@ -134,7 +140,7 @@ NYU_FINGER:
     repos: ['nyu_finger']
 
 ROBOT_FINGERS_DEPENDENCIES:
-    parent_projects: ['BLMC_DRIVERS', 'ROBOT_INTERFACES']
+    parent_projects: ['BLMC_DRIVERS_CAN_ONLY', 'ROBOT_INTERFACES']
     repos: [
       'pybind11_opencv',
       'trifinger_cameras',
