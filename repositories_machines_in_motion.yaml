@@ -4,15 +4,19 @@
 shared_memory:
     path: src/
     origin: mim
+    branch: real_robot_challenge_2021
 real_time_tools:
     path: src/
     origin: mim
+    branch: real_robot_challenge_2021
 mpi_cmake_modules:
     path: src/
     origin: mim
+    branch: real_robot_challenge_2021
 yaml_utils:
     path: src/
     origin: mim
+    branch: real_robot_challenge_2021
 pybind11:
     path: src/
     origin: pybind
@@ -20,21 +24,26 @@ pybind11:
 pybind11_opencv:
     path: src/
     origin: odri
+    branch: real_robot_challenge_2021
 package_template:
     path: src/
     origin: mim
+    branch: real_robot_challenge_2021
 time_series:
     path: src/
     origin: mim
+    branch: real_robot_challenge_2021
 synchronizer:
     path: src/
     origin: mim
 signal_handler:
     path: src/
     origin: mpi-is
+    branch: real_robot_challenge_2021
 serialization_utils:
     path: src/
     origin: mpi-is
+    branch: real_robot_challenge_2021
 
 # -----------------------------------------------------------------------------
 # BLMC
@@ -52,6 +61,7 @@ robot_properties_bolt:
 robot_properties_fingers:
     path: src/
     origin: odri
+    branch: real_robot_challenge_2021
 
 # The robot low level control
 odri_control_interface:
@@ -61,17 +71,21 @@ odri_control_interface:
 robot_interfaces:
     path: src/
     origin: odri
+    branch: real_robot_challenge_2021
 
 # Robot-specific repos
 robot_fingers:
     path: src/
     origin: odri
+    branch: real_robot_challenge_2021
 trifinger_cameras:
     path: src/
     origin: odri
+    branch: real_robot_challenge_2021
 trifinger_object_tracking:
     path: src/
     origin: odri
+    branch: real_robot_challenge_2021
 test_bench:
     path: src/
     origin: odri
@@ -165,9 +179,11 @@ ati_ft_sensor:
 blmc_drivers:
     path: src/
     origin: odri
+    branch: real_robot_challenge_2021
 master-board:
     path: src/
     origin: odri
+    branch: real_robot_challenge_2021
 mw_dual_motor_torque_ctrl:
     path: src/
     origin: odri
@@ -198,6 +214,7 @@ raisim_utils:
 trifinger_simulation:
     path: src/
     origin: odri
+    branch: real_robot_challenge_2021
 
 # -----------------------------------------------------------------------------
 # Compilation
@@ -217,6 +234,7 @@ catkin:
 googletest:
     path: src/
     origin: google
+    tag: release-1.10.0
 
 # ------------------------------------------------------------------------------
 # Robot demos and research
