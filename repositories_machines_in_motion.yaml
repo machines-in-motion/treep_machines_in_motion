@@ -183,6 +183,9 @@ mw_gui_universal:
 vicon_sdk:
     path: src/
     origin: mim
+imu_core:
+    path: src/
+    origin: mim
 
 # -----------------------------------------------------------------------------
 # Robot Simulation
