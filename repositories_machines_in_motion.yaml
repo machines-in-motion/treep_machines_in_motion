@@ -159,6 +159,9 @@ reactive_planners:
 # -----------------------------------------------------------------------------
 # Robot Drivers and Firmware
 
+udriver_firmware:
+    path: src/
+    origin: odri
 ati_ft_sensor:
     path: src/
     origin: odri
