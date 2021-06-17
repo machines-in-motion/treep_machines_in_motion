@@ -152,6 +152,10 @@ mim_control:
     path: src/
     origin: mim
     branch: main
+mim_ddp:
+    path: src/
+    origin: mim
+    branch: main
 reactive_planners:
     path: src/
     origin: mim
