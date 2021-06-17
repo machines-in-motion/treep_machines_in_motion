@@ -170,6 +170,14 @@ MIM_CONTROL:
     parent_projects: ['MIM_CONTROL_DEPENDENCIES']
     repos: ['mim_control']
 
+MIM_DDP_DEPENDENCIES:
+    parent_projects: [
+      'COMPILATION', 'PYTHON_BINDING'
+    ]
+MIM_DDP:
+    parent_projects: ['MIM_DDP_DEPENDENCIES']
+    repos: ['mim_ddp']
+
 REACTIVE_PLANNERS_DEPENDENCIES:
     parent_projects: [
         'ROBOT_PROPERTIES_BOLT', 'ROBOT_PROPERTIES_SOLO', 'MIM_CONTROL',
