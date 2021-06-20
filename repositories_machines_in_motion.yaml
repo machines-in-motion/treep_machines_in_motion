@@ -135,6 +135,14 @@ dg_tutorial_with_turtlesim:
     path: src/
     origin: mim
 
+dynamic_graph_head:
+    path: src/
+    origin: mim
+    branch: main
+mim_data_utils:
+    path: src/
+    origin: mim
+    branch: main
 
 # -----------------------------------------------------------------------------
 # Robot Control, Planner, Estimation
