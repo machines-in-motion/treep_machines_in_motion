@@ -52,6 +52,7 @@ robot_properties_bolt:
 robot_properties_nyu_finger:
     path: src/
     origin: odri
+    branch: main
 
 # The robot low level control
 odri_control_interface:
@@ -91,6 +92,7 @@ bolt:
 nyu_finger:
     path: src/
     origin: odri
+    branch: master
 
 # -----------------------------------------------------------------------------
 # Doc
