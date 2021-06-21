@@ -227,6 +227,13 @@ DYNAMIC_GRAPH_MANAGER:
     parent_projects: ['DYNAMIC_GRAPH_MANAGER_DEPENDENCIES']
     repos: ['dynamic_graph_manager']
 
+DYNAMIC_GRAPH_HEAD_DEPENDENCIES:
+    parent_projects: []
+    repos: ['mim_data_utils']
+DYNAMIC_GRAPH_HEAD:
+    parent_projects: ['DYNAMIC_GRAPH_HEAD_DEPENDENCIES']
+    repos: ['dynamic_graph_head']
+
 DG_TUTORIAL_WITH_TURTLESIM_DEPENDENCIES:
     parent_projects: ['DYNAMIC_GRAPH_MANAGER']
 DG_TUTORIAL_WITH_TURTLESIM:
