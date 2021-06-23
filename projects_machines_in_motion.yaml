@@ -108,6 +108,12 @@ ROBOT_PROPERTIES_FINGERS:
     parent_projects: ['ROBOT_PROPERTIES_FINGERS_DEPENDENCIES']
     repos: ['robot_properties_fingers']
 
+ROBOT_PROPERTIES_NYU_FINGER_DEPENDENCIES:
+    parent_projects: ['BULLET_UTILS']
+ROBOT_PROPERTIES_NYU_FINGER:
+    parent_projects: ['ROBOT_PROPERTIES_NYU_FINGER_DEPENDENCIES']
+    repos: ['robot_properties_nyu_finger']
+
 # ALL robot models
 ROBOT_PROPERTIES_ALL:
     parent_projects: [
