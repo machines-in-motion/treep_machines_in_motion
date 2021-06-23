@@ -49,6 +49,9 @@ robot_properties_solo:
 robot_properties_bolt:
     path: src/
     origin: odri
+robot_properties_fingers:
+    path: src/
+    origin: odri
 robot_properties_nyu_finger:
     path: src/
     origin: odri
