@@ -73,6 +73,14 @@ BLMC_DRIVERS_CAN_ONLY:
     parent_projects: ['COMPILATION', 'TIME_SERIES', 'CONFIGURATION_FILE_PARSING']
     repos: ['real_time_tools', 'master-board', 'blmc_drivers']
 
+# Additional drivers
+IMU_CORE_DEPENDENCIES:
+    repos: ['real_time_tools', 'mpi_cmake_modules']
+IMU_CORE:
+    parent_projects: ['IMU_CORE_DEPENDENCIES']
+    repos: ['imu_core']
+
+
 # -----------------------------------------------------------------------------
 # Robot Properties
 
