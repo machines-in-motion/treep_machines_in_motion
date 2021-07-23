@@ -137,6 +137,9 @@ BOLT_DEPENDENCIES:
 BOLT:
     parent_projects: [BOLT_DEPENDENCIES]
     repos: ['bolt']
+DG_BOLT:
+    parent_projects: ['BOLT', 'DYNAMIC_GRAPH_MANAGER', 'DG_TOOLS']
+    repos: []
 
 TESTSTAND_DEPENDENCIES:
     parent_projects: ['BLMC_DRIVERS_LEGACY', 'ROBOT_PROPERTIES_TESTSTAND',
