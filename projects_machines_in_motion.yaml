@@ -62,12 +62,6 @@ BLMC_DEBUG_GUI:
 BLMC_DRIVERS:
     parent_projects: ['CORE_ROBOTICS']
     repos: ['blmc_drivers']
-# The old BLMC_DRIVERS.  This is deprecated, don't use it in new projects!
-BLMC_DRIVERS_LEGACY:
-    parent_projects: ['COMPILATION', 'TIME_SERIES', 'CONFIGURATION_FILE_PARSING']
-    repos: ['real_time_tools', 'master-board', 'blmc_drivers', 'odri_control_interface']
-
-
 ODRI_CONTROL_INTERFACE:
     parent_projects: ['COMPILATION', 'CONFIGURATION_FILE_PARSING']
     repos: ['real_time_tools', 'master-board', 'odri_control_interface']
@@ -124,7 +118,8 @@ ROBOT_PROPERTIES_ALL:
 # Robots
 
 SOLO_DEPENDENCIES:
-    parent_projects: ['BLMC_DRIVERS_LEGACY', 'ROBOT_PROPERTIES_SOLO', 'PYTHON_BINDING']
+    parent_projects: ['ODRI_CONTROL_INTERFACE', 'ROBOT_PROPERTIES_SOLO', 'PYTHON_BINDING']
+    repos: ['slider_box']
 SOLO:
     parent_projects: ['SOLO_DEPENDENCIES']
     repos: ['solo']
@@ -132,16 +127,26 @@ DG_SOLO:
     parent_projects: ['SOLO', 'DYNAMIC_GRAPH_MANAGER', 'DG_TOOLS']
     repos: []
 
+SOLO_TI_DEPENDENCIES:
+    parent_projects: ['SOLO_DEPENDENCIES', 'BLMC_DRIVERS']
+SOLO_TI:
+    parent_projects: ['SOLO_TI_DEPENDENCIES']
+    repos: ['solo', 'slider_box']
+DG_SOLO_TI:
+    parent_projects: ['SOLO_TI', 'DYNAMIC_GRAPH_MANAGER', 'DG_TOOLS']
+    repos: []
+
 BOLT_DEPENDENCIES:
-    parent_projects: ['BLMC_DRIVERS_LEGACY', 'ROBOT_PROPERTIES_BOLT', 'PYTHON_BINDING']
+    parent_projects: ['ODRI_CONTROL_INTERFACE', 'ROBOT_PROPERTIES_BOLT', 'PYTHON_BINDING']
+    repos: ['slider_box']
 BOLT:
     parent_projects: [BOLT_DEPENDENCIES]
     repos: ['bolt']
 
 TESTSTAND_DEPENDENCIES:
-    parent_projects: ['BLMC_DRIVERS_LEGACY', 'ROBOT_PROPERTIES_TESTSTAND',
+    parent_projects: ['ODRI_CONTROL_INTERFACE', 'ROBOT_PROPERTIES_TESTSTAND',
                       'PYTHON_BINDING']
-    repos: ['ati_ft_sensor']
+    repos: ['ati_ft_sensor', 'slider_box']
 TESTSTAND:
     parent_projects: ['TESTSTAND_DEPENDENCIES']
     repos: ['teststand']

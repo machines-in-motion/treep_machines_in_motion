@@ -65,6 +65,10 @@ odri_control_interface:
 robot_interfaces:
     path: src/
     origin: odri
+slider_box:
+    path: src/
+    origin: odri
+    branch: main
 
 # Robot-specific repos
 robot_fingers:
