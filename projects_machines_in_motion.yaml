@@ -34,7 +34,7 @@ PACKAGE_TEMPLATE:
     repos: ['package_template']
 # Contains all core-robotics repository.
 CORE_ROBOTICS:
-    parent_projects: ['SHARED_MEMORY', 'REAL_TIME_TOOLS', 'PACKAGE_TEMPLATE', 'TIME_SERIES']
+    parent_projects: ['SHARED_MEMORY', 'REAL_TIME_TOOLS']
     repos: []
 
 #------------------------------------------------------------------------------
@@ -61,7 +61,7 @@ BLMC_DEBUG_GUI:
 # robot drivers
 BLMC_DRIVERS:
     parent_projects: ['CORE_ROBOTICS']
-    repos: ['blmc_drivers']
+    repos: ['blmc_drivers', 'TIME_SERIES']
 ODRI_CONTROL_INTERFACE:
     parent_projects: ['COMPILATION', 'CONFIGURATION_FILE_PARSING']
     repos: ['real_time_tools', 'master-board', 'odri_control_interface']
