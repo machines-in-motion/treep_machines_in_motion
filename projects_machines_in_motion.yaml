@@ -159,7 +159,7 @@ NYU_FINGER_DEPENDENCIES:
       'ODRI_CONTROL_INTERFACE','CORE_ROBOTICS',
       'PYTHON_BINDING', 'ROBOT_PROPERTIES_NYU_FINGER'
     ]
-    repos: ['robot_properties_nyu_finger']
+    repos: ['robot_properties_nyu_finger', 'yaml_utils']
 NYU_FINGER:
     parent_projects: ['NYU_FINGER_DEPENDENCIES']
     repos: ['nyu_finger']
