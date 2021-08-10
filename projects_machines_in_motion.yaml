@@ -171,6 +171,7 @@ ROBOT_FINGERS_DEPENDENCIES:
     parent_projects: ['BLMC_DRIVERS', 'ROBOT_INTERFACES']
     repos: [
       'pybind11_opencv',
+      'yaml_utils',
       'trifinger_cameras',
       'trifinger_object_tracking',
       'robot_properties_fingers',
