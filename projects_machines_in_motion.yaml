@@ -60,8 +60,8 @@ BLMC_DEBUG_GUI:
     repos: ['mw_gui_universal']
 # robot drivers
 BLMC_DRIVERS:
-    parent_projects: ['CORE_ROBOTICS']
-    repos: ['blmc_drivers', 'TIME_SERIES']
+    parent_projects: ['CORE_ROBOTICS', 'TIME_SERIES']
+    repos: ['blmc_drivers']
 ODRI_CONTROL_INTERFACE:
     parent_projects: ['COMPILATION', 'CONFIGURATION_FILE_PARSING']
     repos: ['real_time_tools', 'master-board', 'odri_control_interface']
