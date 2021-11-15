@@ -85,3 +85,11 @@ sot-torque-control:
 crocoddyl:
     path: src/
     origin: loco3d
+
+# ROS interface to Dynamic-Graph
+dynamic_graph_bridge:
+    path: src/
+    origin: sot
+dynamic_graph_bridge_msgs:
+    path: src/
+    origin: sot
