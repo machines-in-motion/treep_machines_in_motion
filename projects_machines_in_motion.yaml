@@ -126,7 +126,9 @@ SOLO:
 DG_SOLO:
     parent_projects: ['SOLO', 'DYNAMIC_GRAPH_MANAGER', 'DG_TOOLS']
     repos: []
-
+DG_KUKA:
+    parent_projects: ['DYNAMIC_GRAPH_MANAGER', 'DG_TOOLS']
+    repos: ['kuka', 'kuka_drivers', 'robot_properties_kuka']
 SOLO_TI_DEPENDENCIES:
     parent_projects: ['SOLO_DEPENDENCIES', 'BLMC_DRIVERS']
 SOLO_TI:
