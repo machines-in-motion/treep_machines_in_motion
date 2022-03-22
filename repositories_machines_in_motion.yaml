@@ -210,6 +210,12 @@ vicon_sdk:
 imu_core:
     path: src/
     origin: mim
+kuka_drivers:
+    path: src/
+    origin: mim
+kuka:
+    path: src/
+    origin: mim
 
 # -----------------------------------------------------------------------------
 # Robot Simulation
@@ -225,6 +231,10 @@ raisim_utils:
 trifinger_simulation:
     path: src/
     origin: odri
+robot_properties_kuka:
+    path: src/
+    origin: mim
+    branch: main    
 
 # -----------------------------------------------------------------------------
 # Compilation
