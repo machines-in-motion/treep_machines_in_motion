@@ -192,13 +192,7 @@ blmc_drivers:
 master-board:
     path: src/
     origin: odri
-mw_dual_motor_torque_ctrl:
-    path: src/
-    origin: odri
 user_config_f28069m_drv8305:
-    path: src/
-    origin: odri
-amd_motorware_ext:
     path: src/
     origin: odri
 mw_gui_universal:
