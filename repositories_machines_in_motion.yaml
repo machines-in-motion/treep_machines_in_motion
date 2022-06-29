@@ -4,15 +4,19 @@
 shared_memory:
     path: src/
     origin: mim
+    tag: v2.1.0
 real_time_tools:
     path: src/
     origin: mim
+    tag: v3.0.0
 mpi_cmake_modules:
     path: src/
     origin: mim
+    tag: v2.0.0
 yaml_utils:
     path: src/
     origin: mim
+    tag: v2.0.0
 pybind11:
     path: src/
     origin: pybind
@@ -20,21 +24,26 @@ pybind11:
 pybind11_opencv:
     path: src/
     origin: odri
+    tag: v2.0.0
 package_template:
     path: src/
     origin: mim
+    tag: v2.0.0
 time_series:
     path: src/
     origin: mim
+    tag: v2.1.0
 synchronizer:
     path: src/
     origin: mim
 signal_handler:
     path: src/
     origin: mpi-is
+    tag: v2.0.0
 serialization_utils:
     path: src/
     origin: mpi-is
+    tag: v2.1.0
 
 # -----------------------------------------------------------------------------
 # BLMC
@@ -52,6 +61,7 @@ robot_properties_bolt:
 robot_properties_fingers:
     path: src/
     origin: odri
+    tag: v1.1.0
 robot_properties_nyu_finger:
     path: src/
     origin: odri
@@ -65,6 +75,7 @@ odri_control_interface:
 robot_interfaces:
     path: src/
     origin: odri
+    tag: v1.2.0
 slider_box:
     path: src/
     origin: odri
@@ -74,12 +85,15 @@ slider_box:
 robot_fingers:
     path: src/
     origin: odri
+    tag: v1.0.0
 trifinger_cameras:
     path: src/
     origin: odri
+    tag: v1.0.0
 trifinger_object_tracking:
     path: src/
     origin: odri
+    tag: v1.0.0
 test_bench:
     path: src/
     origin: odri
@@ -189,9 +203,11 @@ ati_ft_sensor:
 blmc_drivers:
     path: src/
     origin: odri
+    tag: v2.0.0
 master-board:
     path: src/
     origin: odri
+    tag: v1.0.5
 user_config_f28069m_drv8305:
     path: src/
     origin: odri
@@ -225,6 +241,7 @@ raisim_utils:
 trifinger_simulation:
     path: src/
     origin: odri
+    tag: v1.4.1
 robot_properties_kuka:
     path: src/
     origin: mim
@@ -249,6 +266,7 @@ googletest:
     path: src/
     origin: google
     branch: main
+    tag: v1.12.0
 
 # ------------------------------------------------------------------------------
 # Robot demos and research
