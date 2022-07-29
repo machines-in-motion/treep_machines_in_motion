@@ -93,7 +93,7 @@ trifinger_cameras:
 trifinger_object_tracking:
     path: src/
     origin: odri
-    tag: v1.0.0
+    tag: v1.1.0
 test_bench:
     path: src/
     origin: odri
