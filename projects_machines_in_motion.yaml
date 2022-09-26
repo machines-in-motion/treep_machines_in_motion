@@ -176,7 +176,7 @@ ROBOT_FINGERS:
     repos: ['robot_fingers']
 
 # -----------------------------------------------------------------------------
-# Control/Planner
+# Control/Planner/Estimation
 
 KINO_DYN_PLANNER_DEPENDENCIES:
     parent_projects: ['COMPILATION', 'ROBOT_PROPERTIES_ALL', 'PYTHON_BINDING',
@@ -210,6 +210,10 @@ REACTIVE_PLANNERS_DEPENDENCIES:
 REACTIVE_PLANNERS:
     parent_projects: ['REACTIVE_PLANNERS_DEPENDENCIES']
     repos: ['reactive_planners']
+
+MIM_ESTIMATION:
+    parent_projects: ['MIM_CONTROL', 'SOLO_DEPENDENCIES', 'ROBOT_PROPERTIES_BOLT']
+    repos: ['mim_estimation', 'mim_data_utils']
 
 # -----------------------------------------------------------------------------
 # Docs
