@@ -211,9 +211,14 @@ REACTIVE_PLANNERS:
     parent_projects: ['REACTIVE_PLANNERS_DEPENDENCIES']
     repos: ['reactive_planners']
 
+MIM_ESTIMATION_DEPENDENCIES:
+    parent_projects: [
+        'MIM_CONTROL', 'ROBOT_PROPERTIES_SOLO', 'ROBOT_PROPERTIES_BOLT'
+    ]
+    repos: ['mim_data_utils']
 MIM_ESTIMATION:
-    parent_projects: ['MIM_CONTROL', 'ROBOT_PROPERTIES_SOLO']
-    repos: ['mim_estimation', 'mim_data_utils', 'robot_properties_bolt']
+    parent_projects: [MIM_ESTIMATION_DEPENDENCIES]
+    repos: ['mim_estimation']
 
 # -----------------------------------------------------------------------------
 # Docs
