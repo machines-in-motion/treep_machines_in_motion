@@ -240,7 +240,7 @@ DOC:
 
 # Robot interface
 ROBOT_INTERFACES_DEPENDENCIES:
-    parent_projects: ['CORE_ROBOTICS']
+    parent_projects: ['CORE_ROBOTICS', 'TIME_SERIES']
 ROBOT_INTERFACES:
     parent_projects: ['ROBOT_INTERFACES_DEPENDENCIES']
     repos: ['robot_interfaces']
