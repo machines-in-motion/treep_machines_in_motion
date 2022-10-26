@@ -35,6 +35,9 @@ signal_handler:
 serialization_utils:
     path: src/
     origin: mpi-is
+cli_utils:
+    path: src/
+    origin: mpi-is
 
 # -----------------------------------------------------------------------------
 # BLMC
