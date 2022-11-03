@@ -16,7 +16,7 @@ yaml_utils:
 pybind11:
     path: src/
     origin: pybind
-    tag: v2.5.0
+    tag: v2.10.0
 pybind11_opencv:
     path: src/
     origin: odri
