@@ -89,6 +89,9 @@ test_bench:
 solo:
     path: src/
     origin: odri
+robot_interfaces_solo:
+    path: src/
+    origin: odri
 teststand:
     path: src/
     origin: github_odri

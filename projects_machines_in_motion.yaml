@@ -181,6 +181,10 @@ ROBOT_FINGERS:
     parent_projects: ['ROBOT_FINGERS_DEPENDENCIES']
     repos: ['robot_fingers']
 
+ROBOT_INTERFACES_SOLO:
+    parent_projects: ['ROBOT_INTERFACES', 'SOLO']
+    repos: ['robot_interfaces_solo', 'cli_utils']
+
 # -----------------------------------------------------------------------------
 # Control/Planner/Estimation
 
