@@ -185,6 +185,10 @@ ROBOT_INTERFACES_SOLO:
     parent_projects: ['ROBOT_INTERFACES', 'SOLO']
     repos: ['robot_interfaces_solo', 'cli_utils']
 
+ROBOT_INTERFACES_BOLT:
+    parent_projects: ['ROBOT_INTERFACES', 'BOLT']
+    repos: ['robot_interfaces_bolt', 'cli_utils']
+
 # -----------------------------------------------------------------------------
 # Control/Planner/Estimation
 

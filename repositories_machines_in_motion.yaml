@@ -92,6 +92,9 @@ solo:
 robot_interfaces_solo:
     path: src/
     origin: odri
+robot_interfaces_bolt:
+    path: src/
+    origin: odri
 teststand:
     path: src/
     origin: github_odri
